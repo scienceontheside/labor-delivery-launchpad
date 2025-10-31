@@ -51,7 +51,7 @@ const Index = () => {
             {/* primary */}
             <Button
               className="bg-white text-[#24766f] px-8 py-4 rounded-2xl font-medium
-                         hover:bg-white hover:ring-2 hover:ring-[#24766f]/30
+                         hover:bg-white hover:ring-1 hover:ring-inset hover:ring-[#24766f]/40
                          transition-all duration-150"
               onClick={() => window.open(BOOKING_URL, "_blank", "noopener,noreferrer")}
             >

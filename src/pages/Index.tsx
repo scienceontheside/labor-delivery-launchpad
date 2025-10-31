@@ -62,7 +62,7 @@ const Index = () => {
               className="bg-transparent border-primary-foreground/50 text-primary-foreground px-8 py-6"
               onClick={() => scrollToSection("how-it-works")}
             >
-              How it works →
+              What we do →
             </Button>
           </div>
         </div>

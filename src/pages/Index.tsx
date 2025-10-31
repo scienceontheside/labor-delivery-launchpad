@@ -47,23 +47,22 @@ const Index = () => {
           <p className="text-2xl md:text-3xl">
             Story-first marketing for small teams with big missions.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+          <div className="flex gap-4 justify-center">
+            {/* primary */}
             <Button
-              size="lg"
-              className="text-lg px-8 py-6"
-              onClick={() => window.open(BOOKING_URL, '_blank', 'noopener,noreferrer')}
+              className="bg-primary-foreground text-primary px-8 py-6"
+              onClick={() => window.open(BOOKING_URL, "_blank", "noopener,noreferrer")}
             >
-              Book a call
-              <Calendar className="ml-2" />
+              Book a call <Calendar className="ml-2" />
             </Button>
+
+            {/* secondary */}
             <Button
-              size="lg"
               variant="outline"
-              className="text-lg px-8 py-6 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
+              className="bg-transparent border-primary-foreground/50 text-primary-foreground px-8 py-6"
               onClick={() => scrollToSection("how-it-works")}
             >
-              How it works
-              <ArrowRight className="ml-2" />
+              How it works →
             </Button>
           </div>
         </div>

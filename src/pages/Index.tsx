@@ -1,6 +1,11 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, MessageCircle } from "lucide-react";
+import { ArrowRight, Calendar } from "lucide-react";
+
+// UPDATE THIS with your Google Calendar Appointment Schedule booking link
+// Create your appointment schedule at: https://calendar.google.com
+// Then paste the public booking link here (e.g., https://calendar.google.com/calendar/u/0/appointments/...)
+const BOOKING_URL = "https://calendar.google.com/calendar/appointments/schedules/YOUR_SCHEDULE_ID";
 
 const taglines = [
   "No cause too big. No nonprofit too small.",
@@ -12,7 +17,7 @@ const taglines = [
   "Big-agency thinking for nonprofit realities.",
   "We make your good work visible.",
   "Your mission, ready for donors.",
-  "Because impact shouldn't wait on headcount.",
+  "Because impact doesn't wait on headcount.",
 ];
 
 const Index = () => {
@@ -40,15 +45,18 @@ const Index = () => {
           <p className="text-2xl md:text-3xl font-medium text-primary-foreground/95 drop-shadow-lg">
             Story-first marketing for small teams with big missions.
           </p>
+          <p className="text-lg text-primary-foreground/90 drop-shadow">
+            Grab time with Titus — talk about your nonprofit's story
+          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
             <Button
               size="lg"
               variant="secondary"
               className="text-lg px-8 py-6 hover-scale shadow-lg hover:shadow-xl transition-all"
-              onClick={() => scrollToSection("contact")}
+              onClick={() => window.open(BOOKING_URL, '_blank')}
             >
               Let's talk
-              <MessageCircle className="ml-2" />
+              <Calendar className="ml-2" />
             </Button>
             <Button
               size="lg"
@@ -199,18 +207,39 @@ const Index = () => {
           <p className="text-xl text-muted-foreground">
             Whether you need a one-time campaign or ongoing support, we're here to help you tell your story.
           </p>
-          <Button size="lg" className="text-lg px-8 py-6">
-            Get in touch
-            <MessageCircle className="ml-2" />
+          <p className="text-lg text-muted-foreground">
+            Book a 30-minute call — available Monday–Thursday, 9 AM–3 PM CT
+          </p>
+          <Button 
+            size="lg" 
+            className="text-lg px-8 py-6"
+            onClick={() => window.open(BOOKING_URL, '_blank')}
+          >
+            Book a call
+            <Calendar className="ml-2" />
           </Button>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-6 border-t border-border">
-        <div className="max-w-4xl mx-auto text-center text-muted-foreground">
-          <p className="font-semibold text-foreground mb-1">Labor & Delivery</p>
-          <p className="text-sm">Story-first marketing for small teams with big missions.</p>
+      <footer className="py-12 px-6 border-t border-border">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div className="text-center md:text-left">
+              <p className="font-semibold text-foreground mb-1 text-lg">Labor & Delivery</p>
+              <p className="text-sm text-muted-foreground">Story-first marketing for small teams with big missions.</p>
+              <p className="text-sm text-muted-foreground mt-1">titusdecker@gmail.com</p>
+            </div>
+            <Button 
+              variant="outline"
+              size="lg"
+              className="hover-scale"
+              onClick={() => window.open(BOOKING_URL, '_blank')}
+            >
+              Book a call
+              <Calendar className="ml-2" />
+            </Button>
+          </div>
         </div>
       </footer>
     </div>

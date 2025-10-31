@@ -50,7 +50,9 @@ const Index = () => {
           <div className="flex gap-4 justify-center">
             {/* primary */}
             <Button
-              className="bg-primary-foreground text-primary px-8 py-6"
+              className="bg-white text-[#24766f] px-8 py-4 rounded-2xl font-medium
+                         hover:bg-white hover:shadow-md hover:-translate-y-[1px]
+                         transition-all duration-150"
               onClick={() => window.open(BOOKING_URL, "_blank", "noopener,noreferrer")}
             >
               Book a call <Calendar className="ml-2" />
@@ -59,7 +61,10 @@ const Index = () => {
             {/* secondary */}
             <Button
               variant="outline"
-              className="bg-transparent border-primary-foreground/50 text-primary-foreground px-8 py-6"
+              className="border-white/60 text-white px-8 py-4 rounded-2xl
+                         bg-transparent
+                         hover:bg-white/10 hover:text-white
+                         transition-all duration-150"
               onClick={() => scrollToSection("services")}
             >
               What we do →

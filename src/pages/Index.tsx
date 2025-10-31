@@ -4,8 +4,10 @@ import { ArrowRight, Calendar } from "lucide-react";
 
 // UPDATE THIS with your Google Calendar Appointment Schedule booking link
 // Create your appointment schedule at: https://calendar.google.com
-// Then paste the public booking link here (e.g., https://calendar.google.com/calendar/u/0/appointments/...)
-const BOOKING_URL = "https://calendar.google.com/calendar/appointments/schedules/YOUR_SCHEDULE_ID";
+// Then paste the public booking link here or set VITE_BOOKING_URL environment variable
+const BOOKING_URL = 
+  import.meta.env.VITE_BOOKING_URL || 
+  "https://calendar.google.com/calendar/appointments/schedules/YOUR_SCHEDULE_ID";
 
 const taglines = [
   "No cause too big. No nonprofit too small.",
@@ -26,7 +28,7 @@ const Index = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTagline((prev) => (prev + 1) % taglines.length);
-    }, 4000);
+    }, 6500);
     return () => clearInterval(interval);
   }, []);
 
@@ -37,31 +39,27 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-6 py-20 gradient-shimmer text-primary-foreground texture-overlay overflow-hidden">
-        <div className="max-w-5xl mx-auto text-center space-y-8 relative z-10">
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight transition-all duration-700 animate-fade-in min-h-[8rem] md:min-h-[12rem] flex items-end justify-center max-w-4xl mx-auto">
+      <section className="relative min-h-screen flex items-center justify-center px-6 py-20 bg-primary text-primary-foreground">
+        <div className="max-w-5xl mx-auto text-center space-y-8">
+          <h1 className="text-5xl md:text-7xl font-bold leading-tight transition-all duration-700 animate-fade-in min-h-[8rem] md:min-h-[10rem] max-w-4xl mx-auto">
             {taglines[currentTagline]}
           </h1>
-          <p className="text-2xl md:text-3xl font-medium text-primary-foreground/95 drop-shadow-lg">
+          <p className="text-2xl md:text-3xl">
             Story-first marketing for small teams with big missions.
           </p>
-          <p className="text-lg text-primary-foreground/90 drop-shadow">
-            Grab time with Titus — talk about your nonprofit's story
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Button
               size="lg"
-              variant="secondary"
-              className="text-lg px-8 py-6 hover-scale shadow-lg hover:shadow-xl transition-all"
-              onClick={() => window.open(BOOKING_URL, '_blank')}
+              className="text-lg px-8 py-6"
+              onClick={() => window.open(BOOKING_URL, '_blank', 'noopener,noreferrer')}
             >
-              Let's talk
+              Book a call
               <Calendar className="ml-2" />
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="text-lg px-8 py-6 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover-scale shadow-lg hover:shadow-xl transition-all backdrop-blur-sm"
+              className="text-lg px-8 py-6 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
               onClick={() => scrollToSection("how-it-works")}
             >
               How it works
@@ -93,15 +91,74 @@ const Index = () => {
             <div className="space-y-3">
               <h3 className="text-xl font-semibold text-primary">Fundraising Consultants</h3>
               <p className="text-muted-foreground">
-                Looking for a content creation partner to be the storytelling arm of your work.
+                Looking for a content creation partner to be the storytelling arm of your work. We can be the content arm for your campaigns.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* What We Do */}
+      {/* Work We've Delivered */}
       <section className="py-24 px-6 bg-muted/30">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-foreground">
+            Work we've delivered
+          </h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="p-6 bg-card rounded-lg border border-border">
+              <p className="text-sm uppercase tracking-wide text-muted-foreground mb-2">
+                Small youth nonprofit
+              </p>
+              <h3 className="text-xl font-semibold mb-2">Donor update series</h3>
+              <p className="text-muted-foreground mb-4">
+                3-email nurture + social posts to support a consultant-led appeal.
+              </p>
+              <Button 
+                variant="ghost" 
+                className="px-0" 
+                onClick={() => window.open(BOOKING_URL, '_blank', 'noopener,noreferrer')}
+              >
+                Want something like this? <ArrowRight className="ml-2" size={16} />
+              </Button>
+            </div>
+            <div className="p-6 bg-card rounded-lg border border-border">
+              <p className="text-sm uppercase tracking-wide text-muted-foreground mb-2">
+                Consultant partnership
+              </p>
+              <h3 className="text-xl font-semibold mb-2">Case → content</h3>
+              <p className="text-muted-foreground mb-4">
+                Turned a fundraising case into email, social, and board talking points.
+              </p>
+              <Button 
+                variant="ghost" 
+                className="px-0" 
+                onClick={() => window.open(BOOKING_URL, '_blank', 'noopener,noreferrer')}
+              >
+                Let's do this for your client <ArrowRight className="ml-2" size={16} />
+              </Button>
+            </div>
+            <div className="p-6 bg-card rounded-lg border border-border">
+              <p className="text-sm uppercase tracking-wide text-muted-foreground mb-2">
+                Startup nonprofit
+              </p>
+              <h3 className="text-xl font-semibold mb-2">Story & boilerplate</h3>
+              <p className="text-muted-foreground mb-4">
+                Founder interview, origin story, and web copy to launch the org.
+              </p>
+              <Button 
+                variant="ghost" 
+                className="px-0" 
+                onClick={() => window.open(BOOKING_URL, '_blank', 'noopener,noreferrer')}
+              >
+                Book a call <ArrowRight className="ml-2" size={16} />
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What We Do */}
+      <section className="py-24 px-6 bg-background">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">What we do</h2>
           <p className="text-xl text-muted-foreground mb-12">Strategy in, content out.</p>
@@ -188,11 +245,11 @@ const Index = () => {
       </section>
 
       {/* Why Labor & Delivery */}
-      <section className="py-24 px-6 gradient-feather text-primary-foreground texture-overlay relative">
-        <div className="max-w-4xl mx-auto text-center space-y-8 relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold drop-shadow-lg">No mission too big. No budget too small.</h2>
-          <p className="text-xl md:text-2xl opacity-95 max-w-2xl mx-auto drop-shadow">
-            We were there at the beginning. We know what it's like to do everything with nothing. 
+      <section className="py-24 px-6 bg-primary/90 text-primary-foreground">
+        <div className="max-w-4xl mx-auto text-center space-y-8">
+          <h2 className="text-4xl md:text-5xl font-bold">No mission too big. No budget too small.</h2>
+          <p className="text-xl md:text-2xl max-w-2xl mx-auto">
+            We know what it's like to do everything with nothing. 
             That's why we built Labor & Delivery—high-care, early-stage support for the work that matters most.
           </p>
         </div>
@@ -213,7 +270,7 @@ const Index = () => {
           <Button 
             size="lg" 
             className="text-lg px-8 py-6"
-            onClick={() => window.open(BOOKING_URL, '_blank')}
+            onClick={() => window.open(BOOKING_URL, '_blank', 'noopener,noreferrer')}
           >
             Book a call
             <Calendar className="ml-2" />
@@ -233,8 +290,7 @@ const Index = () => {
             <Button 
               variant="outline"
               size="lg"
-              className="hover-scale"
-              onClick={() => window.open(BOOKING_URL, '_blank')}
+              onClick={() => window.open(BOOKING_URL, '_blank', 'noopener,noreferrer')}
             >
               Book a call
               <Calendar className="ml-2" />

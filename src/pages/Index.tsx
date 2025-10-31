@@ -32,19 +32,19 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-6 py-20 bg-primary text-primary-foreground">
-        <div className="max-w-5xl mx-auto text-center space-y-8">
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight transition-opacity duration-500">
+      <section className="relative min-h-screen flex items-center justify-center px-6 py-20 gradient-shimmer text-primary-foreground texture-overlay overflow-hidden">
+        <div className="max-w-5xl mx-auto text-center space-y-8 relative z-10">
+          <h1 className="text-5xl md:text-7xl font-bold leading-tight transition-all duration-700 animate-fade-in">
             {taglines[currentTagline]}
           </h1>
-          <p className="text-2xl md:text-3xl font-medium text-primary-foreground/90">
+          <p className="text-2xl md:text-3xl font-medium text-primary-foreground/95 drop-shadow-lg">
             Story-first marketing for small teams with big missions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
             <Button
               size="lg"
               variant="secondary"
-              className="text-lg px-8 py-6"
+              className="text-lg px-8 py-6 hover-scale shadow-lg hover:shadow-xl transition-all"
               onClick={() => scrollToSection("contact")}
             >
               Let's talk
@@ -53,7 +53,7 @@ const Index = () => {
             <Button
               size="lg"
               variant="outline"
-              className="text-lg px-8 py-6 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
+              className="text-lg px-8 py-6 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover-scale shadow-lg hover:shadow-xl transition-all backdrop-blur-sm"
               onClick={() => scrollToSection("how-it-works")}
             >
               How it works
@@ -180,10 +180,10 @@ const Index = () => {
       </section>
 
       {/* Why Labor & Delivery */}
-      <section className="py-24 px-6 bg-secondary text-secondary-foreground">
-        <div className="max-w-4xl mx-auto text-center space-y-8">
-          <h2 className="text-4xl md:text-5xl font-bold">No mission too big. No budget too small.</h2>
-          <p className="text-xl md:text-2xl opacity-90 max-w-2xl mx-auto">
+      <section className="py-24 px-6 gradient-feather text-primary-foreground texture-overlay relative">
+        <div className="max-w-4xl mx-auto text-center space-y-8 relative z-10">
+          <h2 className="text-4xl md:text-5xl font-bold drop-shadow-lg">No mission too big. No budget too small.</h2>
+          <p className="text-xl md:text-2xl opacity-95 max-w-2xl mx-auto drop-shadow">
             We were there at the beginning. We know what it's like to do everything with nothing. 
             That's why we built Labor & Delivery—high-care, early-stage support for the work that matters most.
           </p>

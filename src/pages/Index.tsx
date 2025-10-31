@@ -60,7 +60,7 @@ const Index = () => {
             <Button
               variant="outline"
               className="bg-transparent border-primary-foreground/50 text-primary-foreground px-8 py-6"
-              onClick={() => scrollToSection("how-it-works")}
+              onClick={() => scrollToSection("services")}
             >
               What we do →
             </Button>
@@ -157,8 +157,9 @@ const Index = () => {
       </section>
 
       {/* What We Do */}
-      <section className="py-24 px-6 bg-background">
+      <section id="services" className="py-24 px-6 bg-muted/30">
         <div className="max-w-4xl mx-auto">
+          <p className="text-sm uppercase tracking-wider text-primary font-semibold mb-4">Services</p>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">What we do</h2>
           <p className="text-xl text-muted-foreground mb-12">Strategy in, content out.</p>
           <div className="grid sm:grid-cols-2 gap-6">
@@ -191,10 +192,12 @@ const Index = () => {
       </section>
 
       {/* How It Works */}
-      <section id="how-it-works" className="py-24 px-6 bg-background">
+      <section id="process" className="py-24 px-6 bg-background">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-16 text-foreground">How it works</h2>
-          <div className="space-y-12">
+          <p className="text-sm uppercase tracking-wider text-primary font-semibold mb-4">Process</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">How we'll work together</h2>
+          <p className="text-xl text-muted-foreground mb-16">A simple 4-step delivery model.</p>
+          <div className="space-y-10 border-l-2 border-muted pl-8">
             <div className="flex gap-6">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold">
                 1
@@ -239,6 +242,15 @@ const Index = () => {
                 </p>
               </div>
             </div>
+          </div>
+          <div className="mt-12 text-center">
+            <Button 
+              variant="ghost" 
+              className="text-lg"
+              onClick={() => window.open(BOOKING_URL, '_blank', 'noopener,noreferrer')}
+            >
+              Ready to start? Book a call <ArrowRight className="ml-2" />
+            </Button>
           </div>
         </div>
       </section>

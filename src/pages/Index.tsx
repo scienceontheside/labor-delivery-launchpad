@@ -51,7 +51,7 @@ const Index = () => {
             {/* primary */}
             <Button
               className="bg-white text-[#24766f] px-8 py-4 rounded-2xl font-medium
-                         hover:bg-white hover:shadow-md hover:-translate-y-[1px]
+                         hover:bg-white hover:ring-2 hover:ring-[#24766f]/30
                          transition-all duration-150"
               onClick={() => window.open(BOOKING_URL, "_blank", "noopener,noreferrer")}
             >
@@ -63,7 +63,7 @@ const Index = () => {
               variant="outline"
               className="border-white/60 text-white px-8 py-4 rounded-2xl
                          bg-transparent
-                         hover:bg-white/10 hover:text-white
+                         hover:bg-white/10
                          transition-all duration-150"
               onClick={() => scrollToSection("services")}
             >

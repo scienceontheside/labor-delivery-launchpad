@@ -39,7 +39,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-6 py-20 gradient-shimmer text-primary-foreground texture-overlay overflow-hidden">
         <div className="max-w-5xl mx-auto text-center space-y-8 relative z-10">
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight transition-all duration-700 animate-fade-in min-h-[8rem] md:min-h-[12rem] flex items-end justify-center">
+          <h1 className="text-5xl md:text-7xl font-bold leading-tight transition-all duration-700 animate-fade-in min-h-[8rem] md:min-h-[12rem] flex items-end justify-center max-w-4xl mx-auto">
             {taglines[currentTagline]}
           </h1>
           <p className="text-2xl md:text-3xl font-medium text-primary-foreground/95 drop-shadow-lg">

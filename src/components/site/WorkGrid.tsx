@@ -10,8 +10,8 @@ export default function WorkGrid() {
         <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-ink tracking-tight leading-tight">
           Work we've delivered
         </h2>
-        <p className="font-body text-sm text-muted-foreground/70 mb-10">
-          Built in partnership with leaders like you.
+        <p className="font-body text-lg text-muted-foreground mb-10">
+          Built in partnership with development and fundraising teams.
         </p>
         <div className="grid md:grid-cols-3 gap-6">
           <Panel>

@@ -2,7 +2,7 @@ import { Panel } from "@/components/ui/Panel";
 
 export default function Testimonials() {
   return (
-    <section className="py-16 md:py-24 px-4 md:px-6 bg-cream">
+    <section className="py-16 md:py-24 px-6 bg-cream">
       <div className="max-w-5xl mx-auto">
         <p className="text-xs tracking-[0.35em] uppercase text-accent-orange font-semibold mb-4 font-body">
           What leaders are saying

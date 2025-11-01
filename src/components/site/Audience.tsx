@@ -1,6 +1,6 @@
 export default function Audience() {
   return (
-    <section className="py-16 md:py-24 md:pt-28 px-4 md:px-6 bg-cream">
+    <section className="py-16 md:py-24 md:pt-28 px-6 bg-cream">
       <div className="max-w-4xl mx-auto">
         <p className="text-xs tracking-[0.4em] uppercase text-accent-orange font-semibold mb-4 font-body">Who It's For</p>
         <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-ink tracking-tight leading-tight">

@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function WorkGrid() {
   return (
-    <section className="py-16 md:py-24 px-4 md:px-6 bg-background">
+    <section className="py-16 md:py-24 px-6 bg-background">
       <div className="max-w-5xl mx-auto">
         <p className="text-xs tracking-[0.4em] uppercase text-accent-orange font-semibold mb-4 font-body">Recent Work</p>
         <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-ink tracking-tight leading-tight">

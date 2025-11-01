@@ -2,7 +2,7 @@ import { Panel } from "@/components/ui/Panel";
 
 export default function Services() {
   return (
-    <section id="services" className="py-16 md:py-24 px-4 md:px-6 bg-background border-t border-ink/5">
+    <section id="services" className="py-16 md:py-24 px-6 bg-background border-t border-ink/5">
       <div className="max-w-4xl mx-auto">
         <p className="text-xs tracking-[0.4em] uppercase text-accent-orange font-semibold mb-4 font-body">What We Do</p>
         <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-ink tracking-tight leading-tight">Donor & campaign communications, done for you.</h2>

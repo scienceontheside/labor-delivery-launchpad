@@ -6,6 +6,9 @@ export default function Audience() {
         <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-ink tracking-tight leading-tight">
           Built for big-hearted nonprofits that aren't ready to add staff.
         </h2>
+        <p className="font-body text-sm text-muted-foreground/70 mb-4">
+          No cause too big. No nonprofit too small.
+        </p>
         <p className="font-body text-lg md:text-xl text-muted-foreground mb-8">
           If you're doing great work but no one has time to tell the story, this is for you.
         </p>

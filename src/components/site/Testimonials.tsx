@@ -16,10 +16,7 @@ export default function Testimonials() {
         <p className="font-body text-lg md:text-xl text-muted-foreground mb-12 md:mb-16 text-center">
           Recommended by Twin Cities nonprofit and fundraising leaders.
         </p>
-        
-        <p className="font-body text-base text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
-          Leaders who work in fundraising, communications, and Sunday/live environments have trusted this process.
-        </p>
+
 
         <div className="space-y-5 md:space-y-0 md:grid md:grid-cols-3 md:gap-8">
           {/* YMCA of the North */}

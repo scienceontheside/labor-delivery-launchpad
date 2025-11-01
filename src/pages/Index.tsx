@@ -21,14 +21,7 @@ const taglines = [
 ];
 
 const Index = () => {
-  const [currentTagline, setCurrentTagline] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentTagline((prev) => (prev + 1) % taglines.length);
-    }, 6500);
-    return () => clearInterval(interval);
-  }, []);
+  const [currentTagline] = useState(() => Math.floor(Math.random() * taglines.length));
 
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });

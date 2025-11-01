@@ -10,7 +10,7 @@ const BOOKING_URL =
   "https://calendar.app.google/yrFu89XL25QduC6S6";
 
 const taglines = [
-  "No cause too big. No nonprofit too small.",
+  <>No cause too big.<br />No nonprofit too small.</>,
   "No mission too big. No budget too small.",
   "When DIY becomes WTF.",
   "Helping you deliver on your mission.",

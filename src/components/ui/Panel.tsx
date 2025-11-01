@@ -4,7 +4,7 @@ export function Panel({ className, children }: { className?: string; children: R
   return (
     <div
       className={cn(
-        "p-6 bg-card rounded-md border border-ink/5 shadow-sm transition-transform duration-200 hover:-translate-y-1",
+        "p-6 bg-card rounded-lg border border-ink/5 shadow-sm transition-transform duration-150 hover:-translate-y-[2px]",
         className
       )}
     >

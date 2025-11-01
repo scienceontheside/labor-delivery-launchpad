@@ -21,20 +21,20 @@ export default function Hero() {
       <div className="hidden lg:block pointer-events-none absolute inset-y-[-60px] right-32 w-10 bg-accent-teal/10 rotate-[12deg]" />
       
       <div className="mx-auto w-full md:max-w-6xl relative z-10">
-        <div className="w-full md:max-w-3xl space-y-6">
+        <div className="w-full max-w-[680px] space-y-6">
           {/* Small uppercase label */}
-          <p className="text-xs tracking-[0.35em] uppercase text-primary-foreground/70 font-body">
+          <p className="text-xs tracking-[0.4em] uppercase text-primary-foreground/70 font-body">
             Labor & Delivery / Nonprofit Communications
           </p>
 
-          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight transition-all duration-700 animate-fade-in">
+          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold leading-[0.95] tracking-tight transition-all duration-700 animate-fade-in">
             {currentTagline}
           </h1>
-          <p className="font-body text-base md:text-lg lg:text-xl leading-snug max-w-full md:max-w-xl">
-            Big-hearted teams, short on time.<br />
+          <p className="font-body text-base md:text-lg lg:text-xl leading-snug mt-5">
+            <strong>Big-hearted teams, short on time.</strong><br />
             We write and ship your donor emails, campaign content, social, and web updates — so you can fundraise and run programs.
           </p>
-          <p className="font-body text-sm text-primary-foreground/70 mt-4 mb-5">
+          <p className="font-body text-sm text-primary-foreground/70">
             30 minutes · on Zoom · we pick 1–2 pieces to ship first.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4">

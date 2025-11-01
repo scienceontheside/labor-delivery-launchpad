@@ -2,7 +2,7 @@ export default function Audience() {
   return (
     <section className="py-16 md:py-24 px-4 md:px-6 bg-cream">
       <div className="max-w-4xl mx-auto">
-        <p className="text-xs tracking-[0.35em] uppercase text-accent-orange font-semibold mb-4 font-body">Who It's For</p>
+        <p className="text-xs tracking-[0.4em] uppercase text-accent-orange font-semibold mb-4 font-body">Who It's For</p>
         <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-ink tracking-tight leading-tight">
           Made for big-hearted nonprofits not ready to hire.
         </h2>
@@ -25,7 +25,7 @@ export default function Audience() {
           <div className="space-y-3">
             <h3 className="font-heading text-xl font-semibold text-accent-orange">Fundraising Consultants</h3>
             <p className="font-body text-muted-foreground">
-              Looking for a content creation partner to be the storytelling arm of your campaigns.
+              Looking for a content partner to be the storytelling arm of your campaigns.
             </p>
           </div>
         </div>

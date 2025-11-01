@@ -1,5 +1,4 @@
-import { LDButton } from "@/components/ui/ld-button";
-import { Calendar } from "lucide-react";
+import { BookCallButton } from "@/components/ui/BookCallButton";
 
 export default function CTA() {
   return (
@@ -21,17 +20,13 @@ export default function CTA() {
             Let's talk about your good work.
           </h2>
           <p className="font-body text-xl text-muted-foreground">
-            Whether you need a one-time campaign or ongoing support, we're here to help you tell your story.
+            Bring one thing you need to send — we'll start there.
           </p>
-          <p className="font-body text-lg text-muted-foreground">
-            <strong>Book a 30-minute call — available Monday–Thursday, 9 AM–3 PM CT.</strong>
-          </p>
-          <div className="pt-4">
-          <LDButton asChild variant="primary">
-            <a href="https://calendar.app.google/yrFu89XL25QduC6S6" target="_blank" rel="noopener noreferrer">
-              Book a call <Calendar className="h-5 w-5" />
-            </a>
-          </LDButton>
+          <div className="pt-4 flex flex-col items-center gap-3">
+            <BookCallButton>Book a 30-minute call</BookCallButton>
+            <p className="font-body text-sm text-muted-foreground">
+              Monday–Thursday · 9–3 PM CT
+            </p>
           </div>
         </div>
       </section>

@@ -4,9 +4,9 @@ export default function Services() {
   return (
     <section id="services" className="py-16 md:py-24 px-4 md:px-6 bg-background border-t border-ink/5">
       <div className="max-w-4xl mx-auto">
-        <p className="text-xs tracking-[0.35em] uppercase text-accent-orange font-semibold mb-4 font-body">Services</p>
-        <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-ink tracking-tight leading-tight">What we do</h2>
-        <p className="font-body text-xl text-muted-foreground mb-12">Strategy in, content out.</p>
+        <p className="text-xs tracking-[0.4em] uppercase text-accent-orange font-semibold mb-4 font-body">What We Do</p>
+        <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-ink tracking-tight leading-tight">Strategy in. Content out.</h2>
+        <p className="font-body text-xl text-muted-foreground mb-10">Donor-first communications for growing nonprofits.</p>
         <div className="grid sm:grid-cols-2 gap-6">
           <Panel>
             <h3 className="font-heading text-xl font-semibold mb-2 text-accent-orange">Messaging & Story Capture</h3>
@@ -23,13 +23,13 @@ export default function Services() {
           <Panel>
             <h3 className="font-heading text-xl font-semibold mb-2 text-accent-orange">Social & Web Updates</h3>
             <p className="font-body text-muted-foreground">
-              Consistent, on-brand content that keeps your community engaged and informed.
+              Consistent, on-brand content that keeps your people engaged.
             </p>
           </Panel>
           <Panel>
-            <h3 className="font-heading text-xl font-semibold mb-2 text-accent-teal">Fractional Marketing & Communications (nonprofit)</h3>
+            <h3 className="font-heading text-xl font-semibold mb-2 text-accent-teal">Fractional Marketing & Comms</h3>
             <p className="font-body text-muted-foreground">
-              Month-to-month partnership that scales with your needs — no full-time hire required.
+              Month-to-month support that grows with you — no full-time hire required.
             </p>
           </Panel>
         </div>

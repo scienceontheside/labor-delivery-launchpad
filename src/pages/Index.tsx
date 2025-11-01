@@ -34,11 +34,11 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative bg-primary text-primary-foreground px-6 py-16 md:py-20 lg:py-24 overflow-hidden">
         {/* Abstract mid-century shapes */}
-        <div className="absolute top-10 right-10 w-32 h-32 bg-accent-orange opacity-10 rotate-12 rounded-lg pointer-events-none" />
-        <div className="absolute bottom-20 left-10 w-24 h-40 bg-accent-teal opacity-15 -rotate-6 rounded-lg pointer-events-none" />
+        <div className="absolute top-10 right-10 w-32 h-32 bg-accent-teal opacity-[0.12] rotate-12 rounded-lg pointer-events-none" />
+        <div className="absolute bottom-20 left-10 w-24 h-40 bg-accent-orange opacity-10 -rotate-6 rounded-lg pointer-events-none" />
         
         <div className="max-w-6xl mx-auto relative z-10">
-          <div className="max-w-3xl space-y-8">
+          <div className="max-w-3xl space-y-6">
             <h1 className="font-heading text-5xl md:text-7xl font-bold leading-tight tracking-tight transition-all duration-700 animate-fade-in min-h-[8rem] md:min-h-[10rem]">
               {taglines[currentTagline]}
             </h1>
@@ -174,9 +174,12 @@ const Index = () => {
           <p className="text-sm uppercase tracking-widest text-accent-orange font-semibold mb-4">
             What leaders are saying
           </p>
-          <h2 className="font-heading text-4xl md:text-5xl font-bold mb-10 text-foreground tracking-tight leading-tight">
+          <h2 className="font-heading text-4xl md:text-5xl font-bold mb-4 text-foreground tracking-tight leading-tight">
             Trusted by small-but-mighty teams.
           </h2>
+          <p className="font-body text-lg text-muted-foreground mb-10">
+            Recommended by Twin Cities nonprofit and fundraising leaders.
+          </p>
 
           <div className="grid md:grid-cols-3 gap-6">
             {/* YMCA of the North */}
@@ -354,7 +357,7 @@ const Index = () => {
 
       {/* Contact / CTA */}
       <section id="contact" className="py-24 px-6 bg-cream">
-        <div className="max-w-2xl mx-auto text-center space-y-8">
+        <div className="max-w-2xl mx-auto text-center space-y-6">
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground tracking-tight leading-tight">
             Let's talk about your good work.
           </h2>
@@ -366,7 +369,9 @@ const Index = () => {
           </p>
           <Button 
             size="lg" 
-            className="text-lg px-8 py-6"
+            className="bg-white text-[#A47864] px-8 py-6 rounded-full font-medium text-lg
+                       hover:bg-white hover:ring-2 hover:ring-inset hover:ring-[#A47864]/35
+                       transition-all duration-150"
             asChild
           >
             <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">

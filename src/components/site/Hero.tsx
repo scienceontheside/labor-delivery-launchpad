@@ -50,8 +50,8 @@ export default function Hero() {
         </div>
       </div>
       
-      {/* Curve into cream - desktop only */}
-      <div className="hidden md:block absolute bottom-0 left-0 right-0 h-10 bg-cream rounded-t-[32px]" />
+      {/* Curve into cream - tablet and desktop */}
+      <div className="hidden md:block absolute bottom-0 left-0 right-0 h-8 md:h-10 bg-cream rounded-t-[24px] md:rounded-t-[32px]" />
     </section>
   );
 }

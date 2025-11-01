@@ -10,7 +10,7 @@ export default function SiteFooter() {
             <p className="font-body text-sm text-muted-foreground">Story & donor communications for small teams.</p>
             <p className="font-body text-sm text-muted-foreground mt-1">titusdecker@gmail.com</p>
           </div>
-          <BookCallButton variant="ghost">Book a call</BookCallButton>
+          <BookCallButton variant="primary">Book a call</BookCallButton>
         </div>
       </div>
     </footer>

@@ -5,10 +5,7 @@ import { ArrowRight, Calendar } from "lucide-react";
 // UPDATE THIS with your Google Calendar Appointment Schedule booking link
 // Create your appointment schedule at: https://calendar.google.com
 // Then paste the public booking link here or set VITE_BOOKING_URL environment variable
-const ENV_BOOKING_URL = import.meta.env.VITE_BOOKING_URL;
-const BOOKING_URL = ENV_BOOKING_URL && !ENV_BOOKING_URL.includes("YOUR_SCHEDULE_ID")
-  ? ENV_BOOKING_URL
-  : "https://calendar.app.google/yrFu89XL25QduC6S6";
+const BOOKING_URL = "https://calendar.app.google/yrFu89XL25QduC6S6";
 
 const taglines = [
   "No cause too big. No nonprofit too small.",

@@ -27,7 +27,7 @@ export default function Services() {
             </p>
           </Panel>
           <Panel>
-            <h3 className="font-heading text-xl font-semibold mb-2 text-accent-teal">Fractional Marketing Support</h3>
+            <h3 className="font-heading text-xl font-semibold mb-2 text-accent-teal">Fractional Communications Support</h3>
             <p className="font-body text-muted-foreground">
               Month-to-month nonprofit mar/comms when hiring isn't realistic.
             </p>

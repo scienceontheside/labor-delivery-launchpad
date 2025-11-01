@@ -14,7 +14,7 @@ export default function Audience() {
           <li>• You have a campaign but nothing donor-ready</li>
           <li>• Your board wants "more communications" but didn't add staff</li>
         </ul>
-        <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-3 md:gap-8">
+        <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-3 md:gap-8 mt-16">
           <div className="space-y-3 py-4 md:py-0">
             <h3 className="font-heading text-xl font-semibold text-accent-orange">Executive directors</h3>
             <p className="font-body text-muted-foreground leading-relaxed">

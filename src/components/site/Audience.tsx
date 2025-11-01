@@ -11,8 +11,8 @@ export default function Audience() {
         </p>
         <ul className="space-y-1.5 text-muted-foreground font-body mb-12 list-disc pl-6 marker:text-accent-orange">
           <li>You owe donors an update and no one has time to write it</li>
-          <li>You have a campaign but nothing donor-ready</li>
-          <li>Your board wants "more communications" but didn't add staff</li>
+          <li>You've got a campaign but nothing donor-ready yet</li>
+          <li>Your board wants more communications and you need extra capacity to deliver</li>
         </ul>
         <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-3 md:gap-8 mt-16">
           <div className="space-y-3 py-4 md:py-0">

@@ -20,7 +20,7 @@ export function BookCallButton({
   
   const variants: Record<string, string> = {
     primary:
-      "bg-white text-[#A47864] hover:ring-2 hover:ring-inset hover:ring-white/40 focus-visible:ring-white/60",
+      "bg-white text-[#A47864] hover:ring-2 hover:ring-inset hover:ring-[#A47864]/30 focus-visible:ring-[#A47864]/60",
     outline:
       "border border-white/50 text-white bg-transparent hover:bg-white/5 focus-visible:ring-white/40",
     ghost: "text-[#A47864] hover:bg-[#A47864]/10 focus-visible:ring-[#A47864]/30",

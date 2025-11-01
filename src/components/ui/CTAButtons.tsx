@@ -26,7 +26,7 @@ export function CTAButtons({
         href={BOOKING_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center justify-center gap-2 rounded-full bg-white text-[#A47864] px-8 py-3 text-base font-medium transition-all duration-150 hover:ring-2 hover:ring-inset hover:ring-white/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 w-full sm:w-auto h-[48px]"
+        className="inline-flex items-center justify-center gap-2 rounded-full bg-white text-[#A47864] px-8 py-3 text-base font-medium transition-all duration-150 hover:ring-2 hover:ring-inset hover:ring-[#A47864]/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#A47864]/60 w-full sm:w-auto h-[48px]"
       >
         {primaryText} <Calendar className="h-5 w-5" />
       </a>

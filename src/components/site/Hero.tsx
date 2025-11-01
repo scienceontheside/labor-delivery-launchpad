@@ -29,8 +29,10 @@ export default function Hero() {
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold leading-[0.95] tracking-tight transition-all duration-700 animate-fade-in">
             {currentTagline}
           </h1>
-          <p className="font-body text-base md:text-lg lg:text-xl leading-snug mt-5 max-w-[580px]">
-            <strong>Big-hearted teams. Short on time.</strong><br />
+          <p className="font-body text-lg md:text-xl font-medium leading-snug">
+            Big-hearted teams, short on time.
+          </p>
+          <p className="font-body text-base md:text-lg leading-snug max-w-[580px]">
             We write and ship your donor emails, campaign content, social, and web updates — so you can fundraise and run programs.
           </p>
           <p className="font-body text-xs text-primary-foreground/70 leading-relaxed">

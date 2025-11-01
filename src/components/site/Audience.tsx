@@ -9,10 +9,10 @@ export default function Audience() {
         <p className="font-body text-lg md:text-xl text-muted-foreground mb-8">
           If you're doing great work but no one has time to tell the story, this is for you.
         </p>
-        <ul className="space-y-2 text-muted-foreground font-body mb-12">
-          <li>• You owe donors an update and no one has time to write it</li>
-          <li>• You have a campaign but nothing donor-ready</li>
-          <li>• Your board wants "more communications" but didn't add staff</li>
+        <ul className="space-y-1.5 text-muted-foreground font-body mb-12 list-disc pl-6 marker:text-accent-orange">
+          <li>You owe donors an update and no one has time to write it</li>
+          <li>You have a campaign but nothing donor-ready</li>
+          <li>Your board wants "more communications" but didn't add staff</li>
         </ul>
         <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-3 md:gap-8 mt-16">
           <div className="space-y-3 py-4 md:py-0">

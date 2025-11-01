@@ -8,6 +8,12 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* Hero-specific tokens */
+    --hero-bg: 16 28% 51%;         /* #A6735F - brand brown */
+    --hero-on: 0 0% 100%;          /* white text on hero */
+    --hero-on-muted: 0 0% 100%;    /* white muted text */
+    --surface: 30 32% 96%;         /* cream/off-white */
+
     /* Base */
     --background: 36 48% 90%; /* #F3EBDD (cream paper) */
     --foreground: 24 16% 12%; /* #1E1A17 (ink) */

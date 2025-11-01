@@ -13,7 +13,7 @@ export default function Audience() {
           <div className="space-y-3">
             <h3 className="font-heading text-xl font-semibold text-accent-orange">Executive Directors</h3>
             <p className="font-body text-muted-foreground">
-              Doing everything — program, fundraising, HR, comms — and need someone to take comms off your plate.
+              Doing everything — program, fundraising, HR, comms — and need someone to take communications off your plate.
             </p>
           </div>
           <div className="space-y-3">

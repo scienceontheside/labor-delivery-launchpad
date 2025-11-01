@@ -6,25 +6,25 @@ export default function Audience() {
         <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-ink tracking-tight leading-tight">
           Made for big-hearted nonprofits not ready to hire.
         </h2>
-        <p className="font-body text-lg md:text-xl text-muted-foreground mb-12">
+        <p className="font-body text-lg md:text-xl text-muted-foreground mb-12 hidden md:block">
           If you're doing great work but no one has time to tell the story, this is for you.
         </p>
         <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-3 md:gap-8">
-          <div className="space-y-3">
+          <div className="space-y-3 py-4 md:py-0">
             <h3 className="font-heading text-xl font-semibold text-accent-orange">Executive Directors</h3>
-            <p className="font-body text-muted-foreground">
+            <p className="font-body text-muted-foreground leading-relaxed">
               Doing everything — program, fundraising, HR, comms — and need someone to take communications off your plate.
             </p>
           </div>
-          <div className="space-y-3">
+          <div className="space-y-3 py-4 md:py-0">
             <h3 className="font-heading text-xl font-semibold text-accent-teal">Small Teams</h3>
-            <p className="font-body text-muted-foreground">
+            <p className="font-body text-muted-foreground leading-relaxed">
               The "slash" people (development/events/social/newsletter) who need consistent, on-brand content.
             </p>
           </div>
-          <div className="space-y-3">
+          <div className="space-y-3 py-4 md:py-0">
             <h3 className="font-heading text-xl font-semibold text-accent-orange">Fundraising Consultants</h3>
-            <p className="font-body text-muted-foreground">
+            <p className="font-body text-muted-foreground leading-relaxed">
               Consultants who want a storytelling/content arm for client campaigns.
             </p>
           </div>

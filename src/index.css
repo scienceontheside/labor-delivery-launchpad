@@ -152,6 +152,12 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+  
+  /* Icon alignment fix */
+  button svg,
+  a svg {
+    flex-shrink: 0;
+  }
 }
 
 @layer utilities {

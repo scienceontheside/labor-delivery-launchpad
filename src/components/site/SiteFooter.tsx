@@ -1,4 +1,5 @@
-import { BookCallButton } from "@/components/ui/BookCallButton";
+import { LDButton } from "@/components/ui/ld-button";
+import { Calendar } from "lucide-react";
 
 export default function SiteFooter() {
   return (
@@ -10,7 +11,11 @@ export default function SiteFooter() {
             <p className="font-body text-sm text-muted-foreground">Story-first marketing for small teams with big missions.</p>
             <p className="font-body text-sm text-muted-foreground mt-1">titusdecker@gmail.com</p>
           </div>
-          <BookCallButton variant="outline" />
+          <LDButton asChild variant="primary">
+            <a href="https://calendar.app.google/yrFu89XL25QduC6S6" target="_blank" rel="noopener noreferrer">
+              Book a call <Calendar className="h-5 w-5" />
+            </a>
+          </LDButton>
         </div>
       </div>
     </footer>

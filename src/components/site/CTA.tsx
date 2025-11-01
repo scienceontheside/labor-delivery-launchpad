@@ -1,4 +1,5 @@
-import { BookCallButton } from "@/components/ui/BookCallButton";
+import { LDButton } from "@/components/ui/ld-button";
+import { Calendar } from "lucide-react";
 
 export default function CTA() {
   return (
@@ -27,7 +28,11 @@ export default function CTA() {
             Book a 30-minute call — available Monday–Thursday, 9 AM–3 PM CT
           </p>
           <div className="pt-4">
-            <BookCallButton variant="primary" className="px-8 py-6 text-lg" />
+          <LDButton asChild variant="primary">
+            <a href="https://calendar.app.google/yrFu89XL25QduC6S6" target="_blank" rel="noopener noreferrer">
+              Book a call <Calendar className="h-5 w-5" />
+            </a>
+          </LDButton>
           </div>
         </div>
       </section>

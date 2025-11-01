@@ -1,4 +1,5 @@
-import { BookCallButton } from "@/components/ui/BookCallButton";
+import { LDButton } from "@/components/ui/ld-button";
+import { Calendar } from "lucide-react";
 
 export default function Process() {
   return (
@@ -61,7 +62,11 @@ export default function Process() {
           </div>
         </div>
         <div className="mt-12 text-center">
-          <BookCallButton variant="ghost" />
+        <LDButton asChild variant="primary">
+          <a href="https://calendar.app.google/yrFu89XL25QduC6S6" target="_blank" rel="noopener noreferrer">
+            Book a call <Calendar className="h-5 w-5" />
+          </a>
+        </LDButton>
         </div>
       </div>
     </section>

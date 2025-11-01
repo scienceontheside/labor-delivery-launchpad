@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { Calendar } from "lucide-react";
+import { LDButton } from "@/components/ui/ld-button";
+import { Calendar, ArrowRight } from "lucide-react";
 
 const taglines = [
   <>No cause too big.<br />No nonprofit too small.</>,
@@ -35,29 +35,16 @@ export default function Hero() {
           </p>
           <div className="flex flex-wrap gap-3 md:gap-4">
             {/* Primary CTA */}
-            <Button
-              asChild
-              className="rounded-full bg-white text-[#A47864] px-8 py-4 font-medium shadow-sm
-                         transition-all duration-150
-                         hover:bg-white/95 hover:text-[#A47864]
-                         focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60
-                         focus-visible:ring-offset-2 focus-visible:ring-offset-[#A47864]"
-            >
+            <LDButton asChild variant="primary">
               <a href="https://calendar.app.google/yrFu89XL25QduC6S6" target="_blank" rel="noopener noreferrer">
-                Book a call <Calendar className="ml-2 h-5 w-5" />
+                Book a call <Calendar className="h-5 w-5" />
               </a>
-            </Button>
+            </LDButton>
 
             {/* Secondary CTA */}
-            <Button
-              variant="outline"
-              className="rounded-full border-white/35 text-white/95 bg-transparent px-8 py-4
-                         hover:bg-white/10 hover:text-white
-                         transition-all duration-150"
-              onClick={() => scrollToSection("services")}
-            >
-              What we do →
-            </Button>
+            <LDButton variant="secondary" onClick={() => scrollToSection("services")}>
+              What we do <ArrowRight className="h-4 w-4" />
+            </LDButton>
           </div>
         </div>
       </div>

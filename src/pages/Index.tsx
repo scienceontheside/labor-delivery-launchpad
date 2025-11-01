@@ -41,11 +41,11 @@ const Index = () => {
             Story-first marketing for small teams with big missions.
           </p>
           <div className="flex gap-4 justify-center">
-            {/* primary */}
+            {/* Primary CTA */}
             <Button
               asChild
-              className="bg-white text-[#24766f] px-8 py-4 rounded-2xl font-medium
-                         hover:bg-white hover:ring-1 hover:ring-inset hover:ring-[#24766f]/40
+              className="bg-white text-[#A47864] px-8 py-4 rounded-2xl font-medium
+                         hover:bg-white hover:ring-2 hover:ring-inset hover:ring-[#A47864]/35
                          transition-all duration-150"
             >
               <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
@@ -53,12 +53,12 @@ const Index = () => {
               </a>
             </Button>
 
-            {/* secondary */}
+            {/* Secondary CTA */}
             <Button
               variant="outline"
-              className="border-white/60 text-white px-8 py-4 rounded-2xl
-                         bg-transparent
-                         hover:bg-white/10
+              className="border-[#1E1A17]/40 text-[#1E1A17]
+                         px-8 py-4 rounded-2xl bg-transparent
+                         hover:bg-[#1E1A17]/10
                          transition-all duration-150"
               onClick={() => scrollToSection("services")}
             >

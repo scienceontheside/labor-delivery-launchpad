@@ -35,7 +35,7 @@ export default function Hero() {
           />
 
           {/* Supporting line after CTA */}
-          <div className="pt-2">
+          <div>
             <p className="font-body text-xs text-primary-foreground/50 leading-relaxed">
               30 minutes on Zoom · we pick 1–2 pieces to ship first.
             </p>

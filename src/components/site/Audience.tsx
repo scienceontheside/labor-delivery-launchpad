@@ -18,19 +18,19 @@ export default function Audience() {
           <div className="space-y-3 py-4 md:py-0">
             <h3 className="font-heading text-xl font-semibold text-accent-orange">Executive directors</h3>
             <p className="font-body text-muted-foreground leading-relaxed">
-              You need someone to take the writing off your plate.
+              You're running programs, fundraising, HR, and comms — we take the communications off your plate.
             </p>
           </div>
           <div className="space-y-3 py-4 md:py-0">
             <h3 className="font-heading text-xl font-semibold text-accent-teal">Small teams</h3>
             <p className="font-body text-muted-foreground leading-relaxed">
-              You need consistent, on-brand content without adding staff.
+              Your 'slash' people (dev/events/social/newsletter) get consistent, on-brand content.
             </p>
           </div>
           <div className="space-y-3 py-4 md:py-0">
             <h3 className="font-heading text-xl font-semibold text-accent-orange">Consultants & fundraisers</h3>
             <p className="font-body text-muted-foreground leading-relaxed">
-              You want a storytelling arm to deliver the pieces.
+              You bring the campaign strategy — we build the donor-facing emails, posts, and updates.
             </p>
           </div>
         </div>

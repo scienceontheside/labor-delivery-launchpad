@@ -25,7 +25,7 @@ export default function Hero() {
           </h1>
           
           <p className="font-body text-base md:text-lg leading-relaxed max-w-[560px]">
-            We interview you and write the donor, campaign, social, and web content you don't have time to do — so you can fundraise and run programs.
+            You fundraise and run programs. We'll tell your story through donor appeals, campaigns, social posts, web copy.
           </p>
           
           <CTAButtons

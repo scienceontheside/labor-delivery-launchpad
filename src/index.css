@@ -9,7 +9,7 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Base */
-    --background: 30 33% 98%; /* #FAF6F2 (cream) */
+    --background: 40 50% 94%; /* #F6F0E7 (cream paper) */
     --foreground: 24 16% 12%; /* #1E1A17 (espresso/near-black) */
 
     --card: 0 0% 100%; /* #FFFFFF */
@@ -26,11 +26,11 @@ All colors MUST be HSL.
     --secondary-foreground: 24 16% 12%;
 
     /* Mid-century modern accents */
-    --accent-orange: 19 67% 55%;   /* #D97941 (rust/orange) */
-    --accent-teal: 171 35% 35%;    /* #3E7770 (dusty teal) */
+    --accent-orange: 9 63% 49%;    /* #C6362C (rust/orange) */
+    --accent-teal: 168 31% 39%;    /* #3E6B5F (dusty teal) */
     
     /* Cream alternate background */
-    --cream: 36 40% 93%;           /* #F5EDE3 */
+    --cream: 40 50% 94%;           /* #F6F0E7 */
 
     /* Secondary/accent neutrals */
     --muted: 22 30% 86%; /* #EADDD4 (mocha tint) */
@@ -94,8 +94,8 @@ All colors MUST be HSL.
     --secondary-foreground: 30 33% 98%;
 
     /* Mid-century modern accents */
-    --accent-orange: 19 67% 55%;   /* #D97941 (rust/orange) */
-    --accent-teal: 171 35% 35%;    /* #3E7770 (dusty teal) */
+    --accent-orange: 9 63% 49%;    /* #C6362C (rust/orange) */
+    --accent-teal: 168 31% 39%;    /* #3E6B5F (dusty teal) */
     
     /* Cream alternate background */
     --cream: 36 20% 25%;           /* Dark mode cream alternative */

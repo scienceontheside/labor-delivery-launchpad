@@ -33,19 +33,20 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative bg-primary text-primary-foreground px-6 py-16 md:py-20 lg:py-24 overflow-hidden">
-        {/* Abstract mid-century shapes */}
-        <div className="absolute top-10 right-10 w-32 h-32 bg-accent-teal opacity-[0.12] rotate-12 rounded-lg pointer-events-none" />
-        <div className="absolute bottom-20 left-10 w-24 h-40 bg-accent-orange opacity-10 -rotate-6 rounded-lg pointer-events-none" />
+        {/* Geometric mid-century strips */}
+        <div className="absolute top-0 right-[15%] w-2 h-full bg-accent-orange opacity-10 rotate-[15deg] pointer-events-none" />
+        <div className="absolute top-0 right-[35%] w-16 h-full bg-accent-teal opacity-10 pointer-events-none" />
+        <div className="absolute top-0 left-[20%] w-1 h-full bg-white opacity-10 rotate-[-15deg] pointer-events-none" />
         
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="max-w-3xl space-y-6">
-            <h1 className="font-heading text-5xl md:text-7xl font-bold leading-tight tracking-tight transition-all duration-700 animate-fade-in min-h-[8rem] md:min-h-[10rem]">
+            <h1 className="font-heading text-5xl md:text-7xl font-bold leading-none tracking-tight transition-all duration-700 animate-fade-in">
               {taglines[currentTagline]}
             </h1>
             <p className="font-body text-2xl md:text-3xl leading-snug">
               Story-first marketing for small teams with big missions.
             </p>
-            <div className="flex flex-wrap gap-4 justify-center">
+            <div className="flex flex-wrap gap-4">
               {/* Primary CTA */}
               <Button
                 asChild
@@ -279,8 +280,15 @@ const Index = () => {
       </section>
 
       {/* How It Works */}
-      <section id="process" className="py-24 px-6 bg-cream">
-        <div className="max-w-4xl mx-auto">
+      <section id="process" className="py-24 px-6 bg-cream relative overflow-hidden">
+        {/* Olivetti-style background word-stack */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none opacity-[0.03] select-none">
+          <p className="font-heading text-[10rem] md:text-[15rem] font-bold leading-none tracking-tighter">LISTEN</p>
+          <p className="font-heading text-[10rem] md:text-[15rem] font-bold leading-none tracking-tighter">SHAPE</p>
+          <p className="font-heading text-[10rem] md:text-[15rem] font-bold leading-none tracking-tighter">DELIVER</p>
+          <p className="font-heading text-[10rem] md:text-[15rem] font-bold leading-none tracking-tighter">REPEAT</p>
+        </div>
+        <div className="max-w-4xl mx-auto relative z-10">
           <p className="text-sm uppercase tracking-widest text-accent-orange font-semibold mb-4">Process</p>
           <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-foreground tracking-tight leading-tight">How we'll work together</h2>
           <p className="font-body text-xl text-muted-foreground mb-16">A simple 4-step delivery model.</p>

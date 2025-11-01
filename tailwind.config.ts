@@ -13,12 +13,20 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'heading': ['Work Sans', 'sans-serif'],
+        'body': ['Inter', 'sans-serif'],
+        'sans': ['Inter', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        cream: "hsl(var(--cream))",
+        'accent-orange': "hsl(var(--accent-orange))",
+        'accent-teal': "hsl(var(--accent-teal))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

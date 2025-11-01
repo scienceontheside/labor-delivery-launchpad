@@ -25,6 +25,13 @@ All colors MUST be HSL.
     --secondary: 18 24% 71%; /* #CFAF9D (dusty rose/tan) */
     --secondary-foreground: 24 16% 12%;
 
+    /* Mid-century modern accents */
+    --accent-orange: 19 67% 55%;   /* #D97941 (rust/orange) */
+    --accent-teal: 171 35% 35%;    /* #3E7770 (dusty teal) */
+    
+    /* Cream alternate background */
+    --cream: 36 40% 93%;           /* #F5EDE3 */
+
     /* Secondary/accent neutrals */
     --muted: 22 30% 86%; /* #EADDD4 (mocha tint) */
     --muted-foreground: 19 15% 40%; /* #6E5A52 */
@@ -85,6 +92,13 @@ All colors MUST be HSL.
 
     --secondary: 18 24% 35%;
     --secondary-foreground: 30 33% 98%;
+
+    /* Mid-century modern accents */
+    --accent-orange: 19 67% 55%;   /* #D97941 (rust/orange) */
+    --accent-teal: 171 35% 35%;    /* #3E7770 (dusty teal) */
+    
+    /* Cream alternate background */
+    --cream: 36 20% 25%;           /* Dark mode cream alternative */
 
     --muted: 19 15% 25%;
     --muted-foreground: 22 30% 70%;

@@ -25,7 +25,7 @@ export default function Hero() {
           </h1>
           
           <p className="font-body text-base md:text-lg leading-relaxed max-w-[560px]">
-            You fundraise and run programs. We'll tell your story through donor appeals, campaigns, social posts, web copy.
+            You fundraise and run programs. We'll tell your story through donor appeals, campaigns, social posts, and web copy.
           </p>
           
           <CTAButtons

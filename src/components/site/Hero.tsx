@@ -35,8 +35,8 @@ export default function Hero() {
           />
 
           {/* Supporting line after CTA */}
-          <div>
-            <p className="font-body text-xs text-primary-foreground/50 leading-relaxed">
+          <div className="mt-4">
+            <p className="font-body text-xs text-primary-foreground/60 leading-relaxed">
               30 minutes on Zoom · we pick 1–2 pieces to ship first.
             </p>
           </div>

@@ -9,8 +9,9 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Base */
-    --background: 40 50% 94%; /* #F6F0E7 (cream paper) */
-    --foreground: 24 16% 12%; /* #1E1A17 (espresso/near-black) */
+    --background: 36 48% 90%; /* #F3EBDD (cream paper) */
+    --foreground: 24 16% 12%; /* #1E1A17 (ink) */
+    --ink: 24 16% 12%; /* #1E1A17 (ink) */
 
     --card: 0 0% 100%; /* #FFFFFF */
     --card-foreground: 24 16% 12%; /* #1E1A17 */
@@ -18,19 +19,19 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 24 16% 12%;
 
-    /* Brand - Mocha Mousse */
-    --primary: 19 26% 52%; /* #A47864 (Mocha Mousse) */
-    --primary-foreground: 24 16% 12%; /* #1E1A17 (dark text on mocha) */
+    /* Brand - Primary */
+    --primary: 19 26% 52%; /* #A47864 (clay/brown) */
+    --primary-foreground: 0 0% 100%; /* white text on primary */
 
     --secondary: 18 24% 71%; /* #CFAF9D (dusty rose/tan) */
     --secondary-foreground: 24 16% 12%;
 
     /* Mid-century modern accents */
-    --accent-orange: 9 63% 49%;    /* #C6362C (rust/orange) */
-    --accent-teal: 168 31% 39%;    /* #3E6B5F (dusty teal) */
+    --accent-orange: 17 65% 49%;   /* #D45A28 */
+    --accent-teal: 169 46% 33%;    /* #2E7D74 */
     
     /* Cream alternate background */
-    --cream: 40 50% 94%;           /* #F6F0E7 */
+    --cream: 36 48% 90%;           /* #F3EBDD */
 
     /* Secondary/accent neutrals */
     --muted: 22 30% 86%; /* #EADDD4 (mocha tint) */
@@ -78,24 +79,25 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 24 16% 12%; /* #1E1A17 (espresso) */
-    --foreground: 30 33% 98%; /* #FAF6F2 (cream) */
+    --background: 24 16% 12%; /* #1E1A17 (ink) */
+    --foreground: 36 48% 90%; /* #F3EBDD (cream) */
+    --ink: 24 16% 12%; /* #1E1A17 (ink) */
 
     --card: 24 16% 15%;
-    --card-foreground: 30 33% 98%;
+    --card-foreground: 36 48% 90%;
 
     --popover: 24 16% 15%;
-    --popover-foreground: 30 33% 98%;
+    --popover-foreground: 36 48% 90%;
 
-    --primary: 19 26% 45%; /* darker mocha */
-    --primary-foreground: 30 33% 98%;
+    --primary: 19 26% 45%; /* darker brown */
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 18 24% 35%;
-    --secondary-foreground: 30 33% 98%;
+    --secondary-foreground: 36 48% 90%;
 
     /* Mid-century modern accents */
-    --accent-orange: 9 63% 49%;    /* #C6362C (rust/orange) */
-    --accent-teal: 168 31% 39%;    /* #3E6B5F (dusty teal) */
+    --accent-orange: 17 65% 49%;   /* #D45A28 */
+    --accent-teal: 169 46% 33%;    /* #2E7D74 */
     
     /* Cream alternate background */
     --cream: 36 20% 25%;           /* Dark mode cream alternative */

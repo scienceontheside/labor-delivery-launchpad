@@ -11,19 +11,12 @@ const BOOKING_URL =
 
 const taglines = [
   <>No cause too big.<br />No nonprofit too small.</>,
-  "No mission too big. No budget too small.",
-  "When DIY becomes WTF.",
+  "Story-first marketing for small teams with big missions.",
   "Helping you deliver on your mission.",
-  "Tiny team. Mighty message.",
-  "For small teams doing big work.",
-  "Big-agency thinking for nonprofit realities.",
-  "We make your good work visible.",
-  "Your mission, ready for donors.",
-  "Because impact doesn't wait on headcount.",
 ];
 
 const Index = () => {
-  const [currentTagline] = useState(0);
+  const [currentTagline] = useState(() => Math.floor(Math.random() * taglines.length));
 
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -32,40 +25,38 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative bg-primary text-primary-foreground px-6 py-16 md:py-20 lg:py-24 overflow-hidden">
-        {/* Geometric mid-century strips */}
-        <div className="absolute top-0 right-[15%] w-2 h-full bg-accent-orange opacity-10 rotate-[15deg] pointer-events-none" />
-        <div className="absolute top-0 right-[35%] w-16 h-full bg-accent-teal opacity-10 pointer-events-none" />
-        <div className="absolute top-0 left-[20%] w-1 h-full bg-white opacity-10 rotate-[-15deg] pointer-events-none" />
+      <section className="relative bg-primary text-primary-foreground px-6 pt-28 pb-20 md:pt-32 md:pb-24 overflow-hidden">
+        {/* Mid-century decorative bars */}
+        <div className="pointer-events-none absolute inset-y-[-50px] right-10 w-16 bg-accent-orange/10 rotate-[12deg]" />
+        <div className="pointer-events-none absolute inset-y-[-60px] right-32 w-10 bg-accent-teal/10 rotate-[12deg]" />
         
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="max-w-3xl space-y-6">
+            {/* Small uppercase label */}
+            <p className="text-xs tracking-[0.35em] uppercase text-primary-foreground/70 font-body">
+              Labor & Delivery / Nonprofit Marketing
+            </p>
+
             <h1 className="font-heading text-5xl md:text-7xl font-bold leading-none tracking-tight transition-all duration-700 animate-fade-in">
               {taglines[currentTagline]}
             </h1>
             <p className="font-body text-2xl md:text-3xl leading-snug">
               Story-first marketing for small teams with big missions.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-3 md:gap-4">
               {/* Primary CTA */}
               <Button
                 asChild
-                className="bg-white text-[#A47864] px-8 py-4 rounded-full font-medium
-                           hover:bg-white hover:ring-2 hover:ring-inset hover:ring-[#A47864]/35
-                           transition-all duration-150"
+                className="rounded-full bg-white text-primary px-8 py-4 font-medium hover:ring-2 hover:ring-inset hover:ring-white/40"
               >
                 <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
-                  Book a call <Calendar className="ml-2" />
+                  Book a call <Calendar className="ml-2 h-5 w-5" />
                 </a>
               </Button>
-
               {/* Secondary CTA */}
               <Button
                 variant="outline"
-                className="border-[#1E1A17]/40 text-[#1E1A17]
-                           px-8 py-4 rounded-lg bg-transparent
-                           hover:bg-[#1E1A17]/10
-                           transition-all duration-150"
+                className="rounded-full border-primary-foreground/20 text-primary-foreground bg-transparent hover:bg-primary-foreground/10"
                 onClick={() => scrollToSection("services")}
               >
                 What we do →
@@ -73,13 +64,16 @@ const Index = () => {
             </div>
           </div>
         </div>
+        
+        {/* Curve into cream */}
         <div className="absolute bottom-0 left-0 right-0 h-10 bg-cream rounded-t-[32px]" />
       </section>
 
       {/* Who It's For */}
       <section className="py-24 px-6 bg-cream">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-heading text-4xl md:text-5xl font-bold mb-12 text-foreground tracking-tight leading-tight">
+          <p className="text-xs uppercase tracking-[0.4em] text-accent-orange font-semibold mb-4 font-body">Who It's For</p>
+          <h2 className="font-heading text-4xl md:text-5xl font-bold mb-12 text-ink tracking-tight leading-tight">
             Made for nonprofits not ready to hire.
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -108,12 +102,13 @@ const Index = () => {
       {/* Work We've Delivered */}
       <section className="py-24 px-6 bg-background">
         <div className="max-w-5xl mx-auto">
-          <h2 className="font-heading text-4xl md:text-5xl font-bold mb-12 text-foreground tracking-tight leading-tight">
+          <p className="text-xs uppercase tracking-[0.4em] text-accent-teal font-semibold mb-4 font-body">Recent Work</p>
+          <h2 className="font-heading text-4xl md:text-5xl font-bold mb-12 text-ink tracking-tight leading-tight">
             Work we've delivered
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="p-6 bg-card rounded-lg border border-border">
-              <p className="text-sm uppercase tracking-widest text-accent-teal font-semibold mb-2">
+            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm">
+              <p className="text-xs uppercase tracking-[0.4em] text-accent-teal font-semibold mb-2 font-body">
                 Small youth nonprofit
               </p>
               <h3 className="font-heading text-xl font-semibold mb-2">Donor update series</h3>
@@ -130,8 +125,8 @@ const Index = () => {
                 </a>
               </Button>
             </div>
-            <div className="p-6 bg-card rounded-lg border border-border">
-              <p className="text-sm uppercase tracking-widest text-accent-orange font-semibold mb-2">
+            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm">
+              <p className="text-xs uppercase tracking-[0.4em] text-accent-orange font-semibold mb-2 font-body">
                 Consultant partnership
               </p>
               <h3 className="font-heading text-xl font-semibold mb-2">Case → content</h3>
@@ -148,8 +143,8 @@ const Index = () => {
                 </a>
               </Button>
             </div>
-            <div className="p-6 bg-card rounded-lg border border-border">
-              <p className="text-sm uppercase tracking-widest text-accent-teal font-semibold mb-2">
+            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm">
+              <p className="text-xs uppercase tracking-[0.4em] text-accent-teal font-semibold mb-2 font-body">
                 Startup nonprofit
               </p>
               <h3 className="font-heading text-xl font-semibold mb-2">Story & boilerplate</h3>
@@ -172,25 +167,25 @@ const Index = () => {
       {/* Testimonials / Social Proof */}
       <section className="py-20 px-6 bg-cream">
         <div className="max-w-5xl mx-auto">
-          <p className="text-sm uppercase tracking-widest text-accent-orange font-semibold mb-4">
+          <p className="text-xs uppercase tracking-[0.4em] text-accent-orange font-semibold mb-4 font-body">
             What leaders are saying
           </p>
-          <h2 className="font-heading text-4xl md:text-5xl font-bold mb-4 text-foreground tracking-tight leading-tight">
+          <h2 className="font-heading text-4xl md:text-5xl font-bold mb-4 text-ink tracking-tight leading-tight">
             Trusted by small-but-mighty teams.
           </h2>
-          <p className="font-body text-lg text-muted-foreground mb-10">
+          <p className="font-body text-lg text-ink/60 mb-10">
             Recommended by Twin Cities nonprofit and fundraising leaders.
           </p>
 
           <div className="grid md:grid-cols-3 gap-6">
             {/* YMCA of the North */}
-            <div className="p-6 bg-card rounded-lg border border-border">
+            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 rounded-full bg-accent-teal/20 flex items-center justify-center text-sm font-semibold text-accent-teal">
                   AB
                 </div>
                 <div>
-                  <p className="font-heading font-semibold text-foreground">Alexandra B.</p>
+                  <p className="font-heading font-semibold text-ink">Alexandra B.</p>
                   <p className="font-body text-sm text-muted-foreground">
                     Assoc. Director of Development, YMCA of the North
                   </p>
@@ -203,13 +198,13 @@ const Index = () => {
             </div>
 
             {/* Westwood Community Church */}
-            <div className="p-6 bg-card rounded-lg border border-border">
+            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 rounded-full bg-accent-orange/20 flex items-center justify-center text-sm font-semibold text-accent-orange">
                   JH
                 </div>
                 <div>
-                  <p className="font-heading font-semibold text-foreground">Jason H.</p>
+                  <p className="font-heading font-semibold text-ink">Jason H.</p>
                   <p className="font-body text-sm text-muted-foreground">
                     Executive Pastor, Westwood Community Church
                   </p>
@@ -223,13 +218,13 @@ const Index = () => {
             </div>
 
             {/* Brave Fundraising / Heidi */}
-            <div className="p-6 bg-card rounded-lg border border-border">
+            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 rounded-full bg-accent-teal/20 flex items-center justify-center text-sm font-semibold text-accent-teal">
                   HF
                 </div>
                 <div>
-                  <p className="font-heading font-semibold text-foreground">Heidi Freisinger</p>
+                  <p className="font-heading font-semibold text-ink">Heidi Freisinger</p>
                   <p className="font-body text-sm text-muted-foreground">
                     Consultant, Brave Fundraising
                   </p>
@@ -245,31 +240,31 @@ const Index = () => {
       </section>
 
       {/* What We Do */}
-      <section id="services" className="py-24 px-6 bg-background">
+      <section id="services" className="py-24 px-6 bg-background border-t border-ink/5">
         <div className="max-w-4xl mx-auto">
-          <p className="text-sm uppercase tracking-widest text-accent-teal font-semibold mb-4">Services</p>
-          <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-foreground tracking-tight leading-tight">What we do</h2>
+          <p className="text-xs uppercase tracking-[0.4em] text-accent-teal font-semibold mb-4 font-body">Services</p>
+          <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-ink tracking-tight leading-tight">What we do</h2>
           <p className="font-body text-xl text-muted-foreground mb-12">Strategy in, content out.</p>
           <div className="grid sm:grid-cols-2 gap-6">
-            <div className="p-6 bg-card rounded-lg border border-border">
+            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm">
               <h3 className="font-heading text-xl font-semibold mb-2 text-accent-orange">Messaging & Story Capture</h3>
               <p className="font-body text-muted-foreground">
                 We listen, ask the right questions, and shape your impact into donor-ready narratives.
               </p>
             </div>
-            <div className="p-6 bg-card rounded-lg border border-border">
+            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm">
               <h3 className="font-heading text-xl font-semibold mb-2 text-accent-teal">Campaign & Donor Content</h3>
               <p className="font-body text-muted-foreground">
                 Appeals, case statements, impact reports, and fundraising materials that move people to give.
               </p>
             </div>
-            <div className="p-6 bg-card rounded-lg border border-border">
+            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm">
               <h3 className="font-heading text-xl font-semibold mb-2 text-accent-orange">Social & Web Updates</h3>
               <p className="font-body text-muted-foreground">
                 Consistent, on-brand content that keeps your community engaged and informed.
               </p>
             </div>
-            <div className="p-6 bg-card rounded-lg border border-border">
+            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm">
               <h3 className="font-heading text-xl font-semibold mb-2 text-accent-teal">Fractional Marketing Support</h3>
               <p className="font-body text-muted-foreground">
                 Month-to-month partnership that scales with your needs—no full-time hire required.
@@ -283,14 +278,14 @@ const Index = () => {
       <section id="process" className="py-24 px-6 bg-cream relative overflow-hidden">
         {/* Olivetti-style background word-stack */}
         <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none opacity-[0.03] select-none">
-          <p className="font-heading text-[10rem] md:text-[15rem] font-bold leading-none tracking-tighter">LISTEN</p>
-          <p className="font-heading text-[10rem] md:text-[15rem] font-bold leading-none tracking-tighter">SHAPE</p>
-          <p className="font-heading text-[10rem] md:text-[15rem] font-bold leading-none tracking-tighter">DELIVER</p>
-          <p className="font-heading text-[10rem] md:text-[15rem] font-bold leading-none tracking-tighter">REPEAT</p>
+          <p className="hidden md:block font-heading text-[10rem] md:text-[15rem] font-bold leading-none tracking-tighter">LISTEN</p>
+          <p className="hidden md:block font-heading text-[10rem] md:text-[15rem] font-bold leading-none tracking-tighter">SHAPE</p>
+          <p className="hidden lg:block font-heading text-[10rem] md:text-[15rem] font-bold leading-none tracking-tighter">DELIVER</p>
+          <p className="hidden lg:block font-heading text-[10rem] md:text-[15rem] font-bold leading-none tracking-tighter">REPEAT</p>
         </div>
         <div className="max-w-4xl mx-auto relative z-10">
-          <p className="text-sm uppercase tracking-widest text-accent-orange font-semibold mb-4">Process</p>
-          <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-foreground tracking-tight leading-tight">How we'll work together</h2>
+          <p className="text-xs uppercase tracking-[0.4em] text-accent-orange font-semibold mb-4 font-body">Process</p>
+          <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-ink tracking-tight leading-tight">How we'll work together</h2>
           <p className="font-body text-xl text-muted-foreground mb-16">A simple 4-step delivery model.</p>
           <div className="space-y-10 border-l-2 border-muted pl-8">
             <div className="flex gap-6">
@@ -366,7 +361,7 @@ const Index = () => {
       {/* Contact / CTA */}
       <section id="contact" className="py-24 px-6 bg-cream">
         <div className="max-w-2xl mx-auto text-center space-y-6">
-          <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground tracking-tight leading-tight">
+          <h2 className="font-heading text-4xl md:text-5xl font-bold text-ink tracking-tight leading-tight">
             Let's talk about your good work.
           </h2>
           <p className="font-body text-xl text-muted-foreground">
@@ -376,10 +371,7 @@ const Index = () => {
             Book a 30-minute call — available Monday–Thursday, 9 AM–3 PM CT
           </p>
           <Button 
-            size="lg" 
-            className="bg-white text-[#A47864] px-8 py-6 rounded-full font-medium text-lg
-                       hover:bg-white hover:ring-2 hover:ring-inset hover:ring-[#A47864]/35
-                       transition-all duration-150"
+            className="rounded-full bg-white text-primary px-8 py-6 font-medium text-lg hover:ring-2 hover:ring-inset hover:ring-primary/40"
             asChild
           >
             <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
@@ -391,17 +383,17 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-6 border-t border-border">
+      <footer className="py-12 px-6 border-t border-ink/5">
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="text-center md:text-left">
-              <p className="font-heading font-semibold text-foreground mb-1 text-lg">Labor & Delivery</p>
+              <p className="font-heading font-semibold text-ink mb-1 text-lg">Labor & Delivery</p>
               <p className="font-body text-sm text-muted-foreground">Story-first marketing for small teams with big missions.</p>
               <p className="font-body text-sm text-muted-foreground mt-1">titusdecker@gmail.com</p>
             </div>
             <Button 
               variant="outline"
-              size="lg"
+              className="rounded-full"
               asChild
             >
               <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">

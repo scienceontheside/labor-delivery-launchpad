@@ -7,7 +7,7 @@ import { ArrowRight, Calendar } from "lucide-react";
 // Then paste the public booking link here or set VITE_BOOKING_URL environment variable
 const BOOKING_URL = 
   import.meta.env.VITE_BOOKING_URL || 
-  "https://calendar.google.com/calendar/appointments/schedules/YOUR_SCHEDULE_ID";
+  "https://calendar.app.google/yrFu89XL25QduC6S6";
 
 const taglines = [
   "No cause too big. No nonprofit too small.",

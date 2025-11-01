@@ -20,7 +20,7 @@ export function CTAButtons({
   className = "",
 }: CTAButtonsProps) {
   return (
-    <div className={`flex flex-col sm:flex-row gap-4 ${className}`}>
+    <div className={`flex flex-col sm:flex-row gap-5 sm:gap-4 ${className}`}>
       {/* Primary CTA - white pill, brown text, calendar icon */}
       <a
         href={BOOKING_URL}

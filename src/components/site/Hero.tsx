@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="hidden lg:block pointer-events-none absolute inset-y-[-60px] right-32 w-10 bg-accent-teal/5 rotate-[12deg]" />
       
       <div className="mx-auto w-full md:max-w-6xl relative z-10">
-        <div className="w-full max-w-[620px] space-y-8">
+        <div className="w-full max-w-[680px] space-y-8">
           {/* Eyebrow */}
           <div className="space-y-1 mb-2">
             <p className="text-xs tracking-[0.4em] uppercase text-primary-foreground/80 font-body leading-tight">
@@ -23,7 +23,7 @@ export default function Hero() {
             </p>
           </div>
 
-          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
+          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold leading-tight md:leading-[1.15] tracking-tight">
             Big-hearted teams, short on time.
           </h1>
           

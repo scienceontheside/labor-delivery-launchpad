@@ -1,4 +1,8 @@
-import { BookCallButton } from "@/components/ui/BookCallButton";
+import { CTAButtons } from "@/components/ui/CTAButtons";
+
+const scrollToSection = (id: string) => {
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+};
 
 export default function Process() {
   return (
@@ -40,8 +44,12 @@ export default function Process() {
             </p>
           </div>
         </div>
-        <div className="text-center space-y-3">
-          <BookCallButton>Book a call</BookCallButton>
+        <div className="flex justify-center">
+          <CTAButtons
+            primaryText="Book a call"
+            secondaryText="What we do"
+            secondaryAction={() => scrollToSection("services")}
+          />
         </div>
       </div>
     </section>

@@ -1,4 +1,8 @@
-import { BookCallButton } from "@/components/ui/BookCallButton";
+import { CTAButtons } from "@/components/ui/CTAButtons";
+
+const scrollToSection = (id: string) => {
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+};
 
 export default function CTA() {
   return (
@@ -22,8 +26,13 @@ export default function CTA() {
           <p className="font-body text-xl text-muted-foreground">
             Bring one thing you need to send — we'll start there.
           </p>
-          <div className="pt-4 flex flex-col items-center gap-3">
-            <BookCallButton>Book a 30-minute call</BookCallButton>
+          <div className="pt-4 flex flex-col items-center gap-4">
+            <CTAButtons
+              primaryText="Book a 30-minute call"
+              secondaryText="What we do"
+              secondaryAction={() => scrollToSection("services")}
+              className="justify-center"
+            />
             <p className="font-body text-sm text-muted-foreground">
               Monday–Thursday · 9–3 PM CT
             </p>

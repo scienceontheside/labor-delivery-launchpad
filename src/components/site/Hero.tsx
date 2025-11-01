@@ -1,5 +1,4 @@
-import { LDButton } from "@/components/ui/ld-button";
-import { Calendar, ArrowRight } from "lucide-react";
+import { CTAButtons } from "@/components/ui/CTAButtons";
 
 const taglines = [
   <>No cause too big.<br />No nonprofit too small.</>,
@@ -37,19 +36,11 @@ export default function Hero() {
           <p className="font-body text-sm text-primary-foreground/70">
             30 minutes · on Zoom · we pick 1–2 pieces to ship first.
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
-            {/* Primary CTA */}
-            <LDButton asChild variant="primary">
-              <a href="https://calendar.app.google/yrFu89XL25QduC6S6" target="_blank" rel="noopener noreferrer">
-                Book a call <Calendar className="h-5 w-5" />
-              </a>
-            </LDButton>
-
-            {/* Secondary CTA */}
-            <LDButton variant="secondary" onClick={() => scrollToSection("services")}>
-              What we do <ArrowRight className="h-4 w-4" />
-            </LDButton>
-          </div>
+          <CTAButtons
+            primaryText="Book a call"
+            secondaryText="What we do"
+            secondaryAction={() => scrollToSection("services")}
+          />
         </div>
       </div>
       

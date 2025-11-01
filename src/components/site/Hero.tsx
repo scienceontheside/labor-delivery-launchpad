@@ -25,7 +25,7 @@ export default function Hero() {
           </h1>
           
           <p className="font-body text-base md:text-lg leading-relaxed max-w-[560px]">
-            You fundraise and run programs. We'll tell your story through donor appeals, campaigns, social posts, and web copy.
+            You fundraise and run programs. We'll tell your story through donor appeals, campaigns, social posts, web copy.
           </p>
           
           <CTAButtons
@@ -35,8 +35,8 @@ export default function Hero() {
           />
 
           {/* Supporting line after CTA */}
-          <div className="mt-4">
-            <p className="font-body text-xs text-primary-foreground/60 leading-relaxed">
+          <div>
+            <p className="font-body text-xs text-primary-foreground/50 leading-relaxed">
               30 minutes on Zoom · we pick 1–2 pieces to ship first.
             </p>
           </div>

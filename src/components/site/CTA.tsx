@@ -26,13 +26,13 @@ export default function CTA() {
           <p className="font-body text-xl text-muted-foreground">
             One quick call. 1–2 pieces shipped first.
           </p>
-          <div className="pt-4 flex flex-col items-center gap-6">
+          <div className="pt-4 flex flex-col items-center gap-4">
             <CTAButtons
               primaryText="Book a call"
               showSecondary={false}
               className="justify-center"
             />
-            <p className="font-body text-sm text-muted-foreground/70">
+            <p className="font-body text-sm text-muted-foreground">
               Monday–Thursday · 9–3 PM CT
             </p>
           </div>

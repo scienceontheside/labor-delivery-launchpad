@@ -6,16 +6,13 @@ export default function Audience() {
         <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-ink tracking-tight leading-tight">
           Built for big-hearted nonprofits that aren't ready to add staff.
         </h2>
-        <p className="font-body text-sm text-muted-foreground/70 mb-4">
-          No cause too big. No nonprofit too small.
-        </p>
         <p className="font-body text-lg md:text-xl text-muted-foreground mb-8">
           If you're doing great work but no one has time to tell the story, this is for you.
         </p>
         <ul className="space-y-1.5 text-muted-foreground font-body mb-12 list-disc pl-6 marker:text-accent-orange">
           <li>You owe donors an update and no one has time to write it</li>
-          <li>You've got a campaign but nothing donor-ready yet</li>
-          <li>Your board wants more communications and you need extra capacity to deliver</li>
+          <li>You have a campaign but nothing donor-ready</li>
+          <li>Your board wants "more communications" but didn't add staff</li>
         </ul>
         <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-3 md:gap-8 mt-16">
           <div className="space-y-3 py-4 md:py-0">

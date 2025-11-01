@@ -48,12 +48,14 @@ const Index = () => {
           <div className="flex gap-4 justify-center">
             {/* primary */}
             <Button
+              asChild
               className="bg-white text-[#24766f] px-8 py-4 rounded-2xl font-medium
                          hover:bg-white hover:ring-1 hover:ring-inset hover:ring-[#24766f]/40
                          transition-all duration-150"
-              onClick={() => window.open(BOOKING_URL, "_blank", "noopener,noreferrer")}
             >
-              Book a call <Calendar className="ml-2" />
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                Book a call <Calendar className="ml-2" />
+              </a>
             </Button>
 
             {/* secondary */}
@@ -118,9 +120,11 @@ const Index = () => {
               <Button 
                 variant="ghost" 
                 className="px-0" 
-                onClick={() => window.open(BOOKING_URL, '_blank', 'noopener,noreferrer')}
+                asChild
               >
-                Want something like this? <ArrowRight className="ml-2" size={16} />
+                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                  Want something like this? <ArrowRight className="ml-2" size={16} />
+                </a>
               </Button>
             </div>
             <div className="p-6 bg-card rounded-lg border border-border">
@@ -134,9 +138,11 @@ const Index = () => {
               <Button 
                 variant="ghost" 
                 className="px-0" 
-                onClick={() => window.open(BOOKING_URL, '_blank', 'noopener,noreferrer')}
+                asChild
               >
-                Let's do this for your client <ArrowRight className="ml-2" size={16} />
+                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                  Let's do this for your client <ArrowRight className="ml-2" size={16} />
+                </a>
               </Button>
             </div>
             <div className="p-6 bg-card rounded-lg border border-border">
@@ -150,9 +156,11 @@ const Index = () => {
               <Button 
                 variant="ghost" 
                 className="px-0" 
-                onClick={() => window.open(BOOKING_URL, '_blank', 'noopener,noreferrer')}
+                asChild
               >
-                Book a call <ArrowRight className="ml-2" size={16} />
+                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                  Book a call <ArrowRight className="ml-2" size={16} />
+                </a>
               </Button>
             </div>
           </div>
@@ -250,9 +258,11 @@ const Index = () => {
             <Button 
               variant="ghost" 
               className="text-lg"
-              onClick={() => window.open(BOOKING_URL, '_blank', 'noopener,noreferrer')}
+              asChild
             >
-              Ready to start? Book a call <ArrowRight className="ml-2" />
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                Ready to start? Book a call <ArrowRight className="ml-2" />
+              </a>
             </Button>
           </div>
         </div>
@@ -284,10 +294,12 @@ const Index = () => {
           <Button 
             size="lg" 
             className="text-lg px-8 py-6"
-            onClick={() => window.open(BOOKING_URL, '_blank', 'noopener,noreferrer')}
+            asChild
           >
-            Book a call
-            <Calendar className="ml-2" />
+            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+              Book a call
+              <Calendar className="ml-2" />
+            </a>
           </Button>
         </div>
       </section>
@@ -304,10 +316,12 @@ const Index = () => {
             <Button 
               variant="outline"
               size="lg"
-              onClick={() => window.open(BOOKING_URL, '_blank', 'noopener,noreferrer')}
+              asChild
             >
-              Book a call
-              <Calendar className="ml-2" />
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                Book a call
+                <Calendar className="ml-2" />
+              </a>
             </Button>
           </div>
         </div>

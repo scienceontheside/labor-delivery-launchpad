@@ -43,7 +43,7 @@ export default function Hero() {
               No cause too big. No nonprofit too small.
             </p>
             
-            <p className="font-body text-xs text-primary-foreground/60 leading-relaxed">
+            <p className="font-body text-xs text-primary-foreground/50 leading-relaxed">
               30 minutes on Zoom · we pick 1–2 pieces to ship first.
             </p>
           </div>

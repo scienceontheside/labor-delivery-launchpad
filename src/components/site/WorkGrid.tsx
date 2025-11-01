@@ -11,7 +11,7 @@ export default function WorkGrid() {
           Work we've delivered
         </h2>
         <p className="font-body text-lg text-muted-foreground mb-10">
-          Built in partnership with development and fundraising teams.
+          Built in partnership with people like you.
         </p>
         <div className="grid md:grid-cols-3 gap-6">
           <Panel>

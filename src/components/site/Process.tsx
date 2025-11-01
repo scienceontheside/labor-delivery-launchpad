@@ -36,6 +36,9 @@ export default function Process() {
               <p className="font-body text-muted-foreground text-lg">
                 We make it donor-ready—clear, compelling, and connected to your goals.
               </p>
+              <p className="font-body text-sm text-muted-foreground mt-2 italic">
+                Human-written, AI-assisted — always tuned to your donors.
+              </p>
             </div>
           </div>
           <div className="flex gap-6">
@@ -62,11 +65,14 @@ export default function Process() {
           </div>
         </div>
         <div className="mt-12 text-center">
-        <LDButton asChild variant="primary">
-          <a href="https://calendar.app.google/yrFu89XL25QduC6S6" target="_blank" rel="noopener noreferrer">
-            Book a call <Calendar className="h-5 w-5" />
-          </a>
-        </LDButton>
+          <p className="font-body text-lg text-muted-foreground mb-4">
+            Ready to start? Book a call.
+          </p>
+          <LDButton asChild variant="primary">
+            <a href="https://calendar.app.google/yrFu89XL25QduC6S6" target="_blank" rel="noopener noreferrer">
+              Book a call <Calendar className="h-5 w-5" />
+            </a>
+          </LDButton>
         </div>
       </div>
     </section>

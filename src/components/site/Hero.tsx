@@ -24,14 +24,18 @@ export default function Hero() {
         <div className="max-w-3xl space-y-6">
           {/* Small uppercase label */}
           <p className="text-xs tracking-[0.35em] uppercase text-primary-foreground/70 font-body">
-            Labor & Delivery / Nonprofit Marketing
+            Labor & Delivery / Nonprofit Communications
           </p>
 
           <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold leading-none tracking-tight transition-all duration-700 animate-fade-in">
             {currentTagline}
           </h1>
           <p className="font-body text-xl md:text-2xl lg:text-3xl leading-snug">
-            Story-first marketing for small teams with big missions.
+            Big-hearted teams, short on time.<br />
+            We write and ship your donor emails, campaign content, social, and web updates — so you can fundraise and run programs.
+          </p>
+          <p className="font-body text-sm text-primary-foreground/80 mt-2">
+            30 minutes · on Zoom · we pick 1–2 pieces to ship first.
           </p>
           <div className="flex flex-wrap gap-3 md:gap-4">
             {/* Primary CTA */}

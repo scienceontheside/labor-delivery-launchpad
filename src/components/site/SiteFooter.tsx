@@ -8,7 +8,7 @@ export default function SiteFooter() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
             <p className="font-heading font-semibold text-ink mb-1 text-lg">Labor & Delivery</p>
-            <p className="font-body text-sm text-muted-foreground">Story-first marketing for small teams with big missions.</p>
+            <p className="font-body text-sm text-muted-foreground">Story & donor communications for nonprofits not ready to hire.</p>
             <p className="font-body text-sm text-muted-foreground mt-1">titusdecker@gmail.com</p>
           </div>
           <LDButton asChild variant="primary">

@@ -7,10 +7,9 @@ export default function CTA() {
       {/* Why Labor & Delivery */}
       <section className="py-24 px-6 bg-primary/90 text-primary-foreground">
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          <h2 className="font-heading text-4xl md:text-5xl font-bold tracking-tight leading-tight">No mission too big. No budget too small.</h2>
+          <h2 className="font-heading text-4xl md:text-5xl font-bold tracking-tight leading-tight">Early-stage care for the work that matters most.</h2>
           <p className="font-body text-xl md:text-2xl max-w-2xl mx-auto">
-            We know what it's like to do everything with nothing. 
-            That's why we built Labor & Delivery—high-care, early-stage support for the work that matters most.
+            We know what it's like to do everything with nothing. That's why we built Labor & Delivery — high-care, early-stage support for small teams with big missions.
           </p>
         </div>
       </section>
@@ -25,7 +24,7 @@ export default function CTA() {
             Whether you need a one-time campaign or ongoing support, we're here to help you tell your story.
           </p>
           <p className="font-body text-lg text-muted-foreground">
-            Book a 30-minute call — available Monday–Thursday, 9 AM–3 PM CT
+            <strong>Book a 30-minute call — available Monday–Thursday, 9 AM–3 PM CT.</strong>
           </p>
           <div className="pt-4">
           <LDButton asChild variant="primary">

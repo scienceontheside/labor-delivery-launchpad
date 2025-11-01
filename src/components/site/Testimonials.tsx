@@ -8,7 +8,7 @@ export default function Testimonials() {
           What leaders are saying
         </p>
         <h2 className="font-heading text-4xl md:text-5xl font-bold mb-4 text-ink tracking-tight leading-tight">
-          Trusted by small-but-mighty teams.
+          Trusted by big-hearted, short-on-time teams.
         </h2>
         <p className="font-body text-lg text-ink/60 mb-10">
           Recommended by Twin Cities nonprofit and fundraising leaders.
@@ -30,7 +30,7 @@ export default function Testimonials() {
             </div>
             <p className="font-body text-muted-foreground">
               "Titus understood both the fundraising side and the database side. He helped us turn
-              Raiser's Edge data into donor-facing email and social that actually matched the campaign."
+              Raiser's Edge data into donor-facing email and social that actually matched the campaign. <strong>We were able to send the series in two weeks.</strong>"
             </p>
           </Panel>
 
@@ -50,7 +50,7 @@ export default function Testimonials() {
             <p className="font-body text-muted-foreground">
               "He led a complex, multi-campus Sunday experience and kept the story consistent across
               live, digital, and print. That's exactly what small nonprofits need — someone to align
-              the message and get it out."
+              the message and get it out. <strong>It took work off our staff right away.</strong>"
             </p>
           </Panel>
 
@@ -69,7 +69,7 @@ export default function Testimonials() {
             </div>
             <p className="font-body text-muted-foreground">
               "I could focus on the fundraising strategy because Titus handled the content and delivery.
-              He's an easy plug-in partner for consultants working with small orgs."
+              He's an easy plug-in partner for consultants working with small orgs. <strong>My client got better content, faster.</strong>"
             </p>
           </Panel>
         </div>

@@ -14,11 +14,11 @@ export default function Hero() {
       <div className="mx-auto w-full md:max-w-6xl relative z-10">
         <div className="w-full max-w-[620px] space-y-8">
           {/* Eyebrow */}
-          <div className="space-y-1">
+          <div className="space-y-1 mb-2">
             <p className="text-xs tracking-[0.4em] uppercase text-primary-foreground/80 font-body leading-tight">
               NONPROFIT COMMUNICATIONS
             </p>
-            <p className="text-xs text-primary-foreground/60 font-body">
+            <p className="text-xs text-primary-foreground/50 font-body">
               by Labor & Delivery
             </p>
           </div>

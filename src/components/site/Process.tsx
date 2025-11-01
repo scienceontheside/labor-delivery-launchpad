@@ -3,7 +3,7 @@ import { Calendar } from "lucide-react";
 
 export default function Process() {
   return (
-    <section id="process" className="py-24 px-6 bg-cream relative overflow-hidden">
+    <section id="process" className="py-16 md:py-24 px-4 md:px-6 bg-cream relative overflow-hidden">
       {/* Olivetti-style background word-stack - desktop only */}
       <div className="hidden lg:flex absolute inset-0 flex-col items-center justify-center pointer-events-none opacity-[0.03] select-none">
         <p className="font-heading text-[15rem] font-bold leading-none tracking-tighter">LISTEN</p>
@@ -12,7 +12,7 @@ export default function Process() {
         <p className="font-heading text-[15rem] font-bold leading-none tracking-tighter">REPEAT</p>
       </div>
       <div className="max-w-4xl mx-auto relative z-10">
-        <p className="text-xs uppercase tracking-[0.4em] text-accent-orange font-semibold mb-4 font-body">Process</p>
+        <p className="text-xs tracking-[0.35em] uppercase text-accent-orange font-semibold mb-4 font-body">Process</p>
         <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-ink tracking-tight leading-tight">How we'll work together</h2>
         <p className="font-body text-xl text-muted-foreground mb-16">A simple 4-step delivery model.</p>
         <div className="space-y-10 border-l-2 border-muted pl-8">

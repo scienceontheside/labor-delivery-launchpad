@@ -2,9 +2,9 @@ import { Panel } from "@/components/ui/Panel";
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 px-6 bg-background border-t border-ink/5">
+    <section id="services" className="py-16 md:py-24 px-4 md:px-6 bg-background border-t border-ink/5">
       <div className="max-w-4xl mx-auto">
-        <p className="text-xs uppercase tracking-[0.4em] text-accent-teal font-semibold mb-4 font-body">Services</p>
+        <p className="text-xs tracking-[0.35em] uppercase text-accent-orange font-semibold mb-4 font-body">Services</p>
         <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-ink tracking-tight leading-tight">What we do</h2>
         <p className="font-body text-xl text-muted-foreground mb-12">Strategy in, content out.</p>
         <div className="grid sm:grid-cols-2 gap-6">

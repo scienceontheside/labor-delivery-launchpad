@@ -15,40 +15,38 @@ export default function Process() {
         <p className="font-heading text-[15rem] font-bold leading-none tracking-tighter">REPEAT</p>
       </div>
       <div className="max-w-4xl mx-auto relative z-10">
-        <p className="text-xs tracking-[0.4em] uppercase text-accent-orange font-semibold mb-4 font-body">Process</p>
-        <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-ink tracking-tight leading-tight">How we'll work together</h2>
-        <p className="font-body text-xl text-muted-foreground mb-10">A simple 4-step delivery model. Most orgs start with an appeal, an update, or a donor email — we'll pick the fastest win.</p>
+        <p className="text-xs tracking-[0.4em] uppercase text-accent-orange font-semibold mb-4 font-body">How It Works</p>
+        <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-ink tracking-tight leading-tight">A simple 4-step delivery model.</h2>
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <div className="space-y-3">
             <h3 className="font-heading text-2xl font-semibold text-accent-orange">1. Listen</h3>
             <p className="font-body text-muted-foreground text-lg">
-              What you do, who you serve, why it matters.
+              30 minutes on Zoom.
             </p>
           </div>
           <div className="space-y-3">
             <h3 className="font-heading text-2xl font-semibold text-accent-teal">2. Shape</h3>
             <p className="font-body text-muted-foreground text-lg">
-              Make it donor-ready: clear, compelling, on-message.
+              We draft the pieces you need first.
             </p>
           </div>
           <div className="space-y-3">
             <h3 className="font-heading text-2xl font-semibold text-accent-orange">3. Deliver</h3>
             <p className="font-body text-muted-foreground text-lg">
-              We draft it in your voice and get it ready to send.
+              You get ready-to-send content.
             </p>
           </div>
           <div className="space-y-3">
             <h3 className="font-heading text-2xl font-semibold text-accent-teal">4. Repeat</h3>
             <p className="font-body text-muted-foreground text-lg">
-              Monthly support, no long-term contract.
+              Add more pieces month to month.
             </p>
           </div>
         </div>
         <div className="flex justify-center">
           <CTAButtons
             primaryText="Book a call"
-            secondaryText="What we do"
-            secondaryAction={() => scrollToSection("services")}
+            showSecondary={false}
           />
         </div>
       </div>

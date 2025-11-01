@@ -28,7 +28,7 @@ export default function Hero() {
           </h1>
           
           <p className="font-body text-base md:text-lg leading-relaxed max-w-[560px]">
-            We write and ship your donor, campaign, social, and web content — so you can fundraise and run programs.
+            We interview you and write the donor, campaign, social, and web content you don't have time to do — so you can fundraise and run programs.
           </p>
           
           <p className="font-body text-sm text-primary-foreground/70 leading-relaxed mt-3">
@@ -40,7 +40,7 @@ export default function Hero() {
           </p>
           <CTAButtons
             primaryText="Book a call"
-            secondaryText="What we do"
+            secondaryText="What we do →"
             secondaryAction={() => scrollToSection("services")}
           />
         </div>

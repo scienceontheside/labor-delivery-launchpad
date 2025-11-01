@@ -33,7 +33,7 @@ export default function Hero() {
             <strong>Big-hearted teams, short on time.</strong><br />
             We write and ship your donor emails, campaign content, social, and web updates — so you can fundraise and run programs.
           </p>
-          <p className="font-body text-sm text-primary-foreground/70">
+          <p className="font-body text-xs text-primary-foreground/70 leading-relaxed">
             30 minutes · on Zoom · we pick 1–2 pieces to ship first.
           </p>
           <CTAButtons

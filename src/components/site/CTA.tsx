@@ -21,16 +21,15 @@ export default function CTA() {
       <section id="contact" className="py-16 md:py-24 px-4 md:px-6 bg-cream">
         <div className="max-w-2xl mx-auto text-center space-y-6">
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-ink tracking-tight leading-tight">
-            Let's talk about your good work.
+            Let's get your donor comms out the door.
           </h2>
           <p className="font-body text-xl text-muted-foreground">
-            Bring one thing you need to send — we'll start there.
+            30 minutes on Zoom. We pick 1–2 pieces to ship first.
           </p>
           <div className="pt-4 flex flex-col items-center gap-4">
             <CTAButtons
-              primaryText="Book a 30-minute call"
-              secondaryText="What we do"
-              secondaryAction={() => scrollToSection("services")}
+              primaryText="Book a call"
+              showSecondary={false}
               className="justify-center"
             />
             <p className="font-body text-sm text-muted-foreground">

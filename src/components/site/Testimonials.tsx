@@ -4,6 +4,9 @@ export default function Testimonials() {
   return (
     <section className="py-16 md:py-24 px-6 bg-cream">
       <div className="max-w-5xl mx-auto">
+        <p className="font-body text-sm text-muted-foreground/70 text-center mb-12 tracking-wide">
+          No cause too big. No nonprofit too small.
+        </p>
         <p className="text-xs tracking-[0.35em] uppercase text-accent-orange font-semibold mb-4 font-body">
           What leaders are saying
         </p>

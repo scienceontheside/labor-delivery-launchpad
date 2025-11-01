@@ -6,36 +6,33 @@ export default function Audience() {
         <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-ink tracking-tight leading-tight">
           Built for big-hearted nonprofits that aren't ready to add staff.
         </h2>
-        <p className="font-body text-lg md:text-xl text-muted-foreground mb-12 hidden md:block">
+        <p className="font-body text-lg md:text-xl text-muted-foreground mb-8">
           If you're doing great work but no one has time to tell the story, this is for you.
         </p>
+        <ul className="space-y-2 text-muted-foreground font-body mb-12">
+          <li>• You owe donors an update and no one has time to write it</li>
+          <li>• You have a campaign but nothing donor-ready</li>
+          <li>• Your board wants "more communications" but didn't add staff</li>
+        </ul>
         <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-3 md:gap-8">
           <div className="space-y-3 py-4 md:py-0">
             <h3 className="font-heading text-xl font-semibold text-accent-orange">Executive directors</h3>
             <p className="font-body text-muted-foreground leading-relaxed">
-              Running programs, fundraising, HR, and comms — and need someone to take the writing off your plate.
+              You need someone to take the writing off your plate.
             </p>
           </div>
           <div className="space-y-3 py-4 md:py-0">
             <h3 className="font-heading text-xl font-semibold text-accent-teal">Small teams</h3>
             <p className="font-body text-muted-foreground leading-relaxed">
-              The "slash" people (development/events/social/newsletter) who need consistent, on-brand content.
+              You need consistent, on-brand content without adding staff.
             </p>
           </div>
           <div className="space-y-3 py-4 md:py-0">
             <h3 className="font-heading text-xl font-semibold text-accent-orange">Consultants & fundraisers</h3>
             <p className="font-body text-muted-foreground leading-relaxed">
-              You lead the strategy and want a storytelling/content arm to deliver the pieces.
+              You want a storytelling arm to deliver the pieces.
             </p>
           </div>
-        </div>
-        <div className="mt-12">
-          <h3 className="font-heading text-xl font-semibold text-ink mb-4">You're in the right place if…</h3>
-          <ul className="space-y-2 text-muted-foreground font-body">
-            <li>• No one has time to write the update.</li>
-            <li>• You have a campaign but nothing donor-ready.</li>
-            <li>• The board wants "more communications" but didn't add staff.</li>
-          </ul>
         </div>
       </div>
     </section>

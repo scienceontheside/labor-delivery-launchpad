@@ -23,14 +23,14 @@ export default function Hero() {
       <div className="mx-auto w-full md:max-w-6xl relative z-10">
         <div className="w-full max-w-[680px] space-y-6">
           {/* Small uppercase label */}
-          <p className="text-xs tracking-[0.4em] uppercase text-primary-foreground/70 font-body">
+          <p className="text-xs tracking-[0.4em] uppercase text-primary-foreground/70 font-body leading-tight">
             Labor & Delivery / Nonprofit Communications
           </p>
 
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold leading-[0.95] tracking-tight transition-all duration-700 animate-fade-in">
             {currentTagline}
           </h1>
-          <p className="font-body text-base md:text-lg lg:text-xl leading-snug mt-5">
+          <p className="font-body text-base md:text-lg lg:text-xl leading-snug mt-5 max-w-[580px]">
             <strong>Big-hearted teams, short on time.</strong><br />
             We write and ship your donor emails, campaign content, social, and web updates — so you can fundraise and run programs.
           </p>

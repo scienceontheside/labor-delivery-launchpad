@@ -14,7 +14,7 @@ export default function Hero() {
       <div className="mx-auto w-full md:max-w-6xl relative z-10">
         <div className="w-full max-w-[680px] space-y-8">
           {/* Eyebrow */}
-          <div className="mb-2">
+          <div>
             <p className="text-xs tracking-[0.4em] uppercase text-primary-foreground/80 font-body leading-tight">
               NONPROFIT COMMUNICATIONS
             </p>

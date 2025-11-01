@@ -1,11 +1,13 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar } from "lucide-react";
 
 // UPDATE THIS with your Google Calendar Appointment Schedule booking link
 // Create your appointment schedule at: https://calendar.google.com
 // Then paste the public booking link here or set VITE_BOOKING_URL environment variable
-const BOOKING_URL = "https://calendar.app.google/yrFu89XL25QduC6S6";
+const BOOKING_URL =
+  import.meta.env.VITE_BOOKING_URL ||
+  "https://calendar.app.google/yrFu89XL25QduC6S6";
 
 const taglines = [
   "No cause too big. No nonprofit too small.",
@@ -21,7 +23,7 @@ const taglines = [
 ];
 
 const Index = () => {
-  const [currentTagline] = useState(() => Math.floor(Math.random() * taglines.length));
+  const [currentTagline] = useState(0);
 
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -88,7 +90,7 @@ const Index = () => {
             <div className="space-y-3">
               <h3 className="text-xl font-semibold text-primary">Fundraising Consultants</h3>
               <p className="text-muted-foreground">
-                Looking for a content creation partner to be the storytelling arm of your work. We can be the content arm for your campaigns.
+                Looking for a content creation partner to be the storytelling arm of your work.
               </p>
             </div>
           </div>
@@ -96,7 +98,7 @@ const Index = () => {
       </section>
 
       {/* Work We've Delivered */}
-      <section className="py-24 px-6 bg-muted/30">
+      <section className="py-24 px-6 bg-background">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-foreground">
             Work we've delivered

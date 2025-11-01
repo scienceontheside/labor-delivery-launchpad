@@ -161,6 +161,77 @@ const Index = () => {
           </div>
         </div>
       </section>
+      {/* Testimonials / Social Proof */}
+      <section className="py-20 px-6 bg-background">
+        <div className="max-w-5xl mx-auto">
+          <p className="text-sm uppercase tracking-wider text-primary font-semibold mb-4">
+            What leaders are saying
+          </p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-10 text-foreground">
+            Trusted by small-but-mighty teams.
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {/* YMCA of the North */}
+            <div className="p-6 bg-card rounded-lg border border-border">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center text-sm font-semibold text-foreground/80">
+                  AB
+                </div>
+                <div>
+                  <p className="font-semibold text-foreground">Alexandra B.</p>
+                  <p className="text-sm text-muted-foreground">
+                    Assoc. Director of Development, YMCA of the North
+                  </p>
+                </div>
+              </div>
+              <p className="text-muted-foreground">
+                "Titus understood both the fundraising side and the database side. He helped us turn
+                Raiser's Edge data into donor-facing email and social that actually matched the campaign."
+              </p>
+            </div>
+
+            {/* Westwood Community Church */}
+            <div className="p-6 bg-card rounded-lg border border-border">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center text-sm font-semibold text-foreground/80">
+                  JH
+                </div>
+                <div>
+                  <p className="font-semibold text-foreground">Jason H.</p>
+                  <p className="text-sm text-muted-foreground">
+                    Executive Pastor, Westwood Community Church
+                  </p>
+                </div>
+              </div>
+              <p className="text-muted-foreground">
+                "He led a complex, multi-campus Sunday experience and kept the story consistent across
+                live, digital, and print. That's exactly what small nonprofits need — someone to align
+                the message and get it out."
+              </p>
+            </div>
+
+            {/* Brave Fundraising / Heidi */}
+            <div className="p-6 bg-card rounded-lg border border-border">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center text-sm font-semibold text-foreground/80">
+                  HF
+                </div>
+                <div>
+                  <p className="font-semibold text-foreground">Heidi Freisinger</p>
+                  <p className="text-sm text-muted-foreground">
+                    Consultant, Brave Fundraising
+                  </p>
+                </div>
+              </div>
+              <p className="text-muted-foreground">
+                "I could focus on the fundraising strategy because Titus handled the content and delivery.
+                He's an easy plug-in partner for consultants working with small orgs."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* What We Do */}
       <section id="services" className="py-24 px-6 bg-muted/30">

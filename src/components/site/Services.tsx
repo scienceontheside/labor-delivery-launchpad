@@ -5,7 +5,7 @@ export default function Services() {
     <section id="services" className="py-16 md:py-24 px-4 md:px-6 bg-background border-t border-ink/5">
       <div className="max-w-4xl mx-auto">
         <p className="text-xs tracking-[0.4em] uppercase text-accent-orange font-semibold mb-4 font-body">What We Do</p>
-        <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-ink tracking-tight leading-tight">Strategy in. Content out.</h2>
+        <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-ink tracking-tight leading-tight">Donor & campaign communications, done for you.</h2>
         <p className="font-body text-xl text-muted-foreground mb-10">Donor-first communications for growing nonprofits.</p>
         <div className="grid sm:grid-cols-2 gap-6">
           <Panel>
@@ -23,13 +23,13 @@ export default function Services() {
           <Panel>
             <h3 className="font-heading text-xl font-semibold mb-2 text-accent-orange">Social & Web Updates</h3>
             <p className="font-body text-muted-foreground">
-              Consistent, on-brand content that keeps your people engaged.
+              Consistent, on-brand updates (light social + web) to stay in front of your people.
             </p>
           </Panel>
           <Panel>
-            <h3 className="font-heading text-xl font-semibold mb-2 text-accent-teal">Fractional Marketing & Comms</h3>
+            <h3 className="font-heading text-xl font-semibold mb-2 text-accent-teal">Fractional Marketing Support</h3>
             <p className="font-body text-muted-foreground">
-              Month-to-month support that grows with you — no full-time hire required.
+              Month-to-month nonprofit mar/comms when hiring isn't realistic.
             </p>
           </Panel>
         </div>

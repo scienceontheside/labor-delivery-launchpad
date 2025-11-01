@@ -32,40 +32,43 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-6 py-20 bg-primary text-primary-foreground">
-        <div className="max-w-5xl mx-auto text-center space-y-8">
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight transition-all duration-700 animate-fade-in min-h-[8rem] md:min-h-[10rem] max-w-4xl mx-auto">
-            {taglines[currentTagline]}
-          </h1>
-          <p className="text-2xl md:text-3xl">
-            Story-first marketing for small teams with big missions.
-          </p>
-          <div className="flex gap-4 justify-center">
-            {/* Primary CTA */}
-            <Button
-              asChild
-              className="bg-white text-[#A47864] px-8 py-4 rounded-2xl font-medium
-                         hover:bg-white hover:ring-2 hover:ring-inset hover:ring-[#A47864]/35
-                         transition-all duration-150"
-            >
-              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
-                Book a call <Calendar className="ml-2" />
-              </a>
-            </Button>
+      <section className="relative bg-primary text-primary-foreground px-6 py-16 md:py-20 lg:py-24">
+        <div className="max-w-6xl mx-auto">
+          <div className="max-w-3xl space-y-8">
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight transition-all duration-700 animate-fade-in min-h-[8rem] md:min-h-[10rem]">
+              {taglines[currentTagline]}
+            </h1>
+            <p className="text-2xl md:text-3xl">
+              Story-first marketing for small teams with big missions.
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center">
+              {/* Primary CTA */}
+              <Button
+                asChild
+                className="bg-white text-[#A47864] px-8 py-4 rounded-2xl font-medium
+                           hover:bg-white hover:ring-2 hover:ring-inset hover:ring-[#A47864]/35
+                           transition-all duration-150"
+              >
+                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                  Book a call <Calendar className="ml-2" />
+                </a>
+              </Button>
 
-            {/* Secondary CTA */}
-            <Button
-              variant="outline"
-              className="border-[#1E1A17]/40 text-[#1E1A17]
-                         px-8 py-4 rounded-2xl bg-transparent
-                         hover:bg-[#1E1A17]/10
-                         transition-all duration-150"
-              onClick={() => scrollToSection("services")}
-            >
-              What we do →
-            </Button>
+              {/* Secondary CTA */}
+              <Button
+                variant="outline"
+                className="border-[#1E1A17]/40 text-[#1E1A17]
+                           px-8 py-4 rounded-2xl bg-transparent
+                           hover:bg-[#1E1A17]/10
+                           transition-all duration-150"
+                onClick={() => scrollToSection("services")}
+              >
+                What we do →
+              </Button>
+            </div>
           </div>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-10 bg-background rounded-t-[32px]" />
       </section>
 
       {/* Who It's For */}

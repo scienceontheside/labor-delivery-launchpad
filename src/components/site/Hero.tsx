@@ -6,7 +6,7 @@ const scrollToSection = (id: string) => {
 
 export default function Hero() {
   return (
-    <section className="relative bg-primary text-primary-foreground px-6 pt-20 pb-14 md:pt-32 md:pb-24 overflow-hidden">
+    <section className="relative bg-primary text-primary-foreground px-6 pt-16 pb-10 md:pt-32 md:pb-24 overflow-hidden">
       {/* Mid-century decorative bars - desktop only */}
       <div className="hidden md:block pointer-events-none absolute inset-y-[-50px] right-10 w-16 bg-accent-orange/5 rotate-[12deg]" />
       <div className="hidden lg:block pointer-events-none absolute inset-y-[-60px] right-32 w-10 bg-accent-teal/5 rotate-[12deg]" />

@@ -26,9 +26,9 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative bg-primary text-primary-foreground px-6 pt-28 pb-20 md:pt-32 md:pb-24 overflow-hidden">
-        {/* Mid-century decorative bars */}
-        <div className="pointer-events-none absolute inset-y-[-50px] right-10 w-16 bg-accent-orange/10 rotate-[12deg]" />
-        <div className="pointer-events-none absolute inset-y-[-60px] right-32 w-10 bg-accent-teal/10 rotate-[12deg]" />
+        {/* Mid-century decorative bars - desktop only */}
+        <div className="hidden md:block pointer-events-none absolute inset-y-[-50px] right-10 w-16 bg-accent-orange/10 rotate-[12deg]" />
+        <div className="hidden lg:block pointer-events-none absolute inset-y-[-60px] right-32 w-10 bg-accent-teal/10 rotate-[12deg]" />
         
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="max-w-3xl space-y-6">
@@ -37,10 +37,10 @@ const Index = () => {
               Labor & Delivery / Nonprofit Marketing
             </p>
 
-            <h1 className="font-heading text-5xl md:text-7xl font-bold leading-none tracking-tight transition-all duration-700 animate-fade-in">
+            <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold leading-none tracking-tight transition-all duration-700 animate-fade-in">
               {taglines[currentTagline]}
             </h1>
-            <p className="font-body text-2xl md:text-3xl leading-snug">
+            <p className="font-body text-xl md:text-2xl lg:text-3xl leading-snug">
               Story-first marketing for small teams with big missions.
             </p>
             <div className="flex flex-wrap gap-3 md:gap-4">
@@ -107,7 +107,7 @@ const Index = () => {
             Work we've delivered
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm">
+            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm transition-transform duration-200 hover:-translate-y-1">
               <p className="text-xs uppercase tracking-[0.4em] text-accent-teal font-semibold mb-2 font-body">
                 Small youth nonprofit
               </p>
@@ -125,7 +125,7 @@ const Index = () => {
                 </a>
               </Button>
             </div>
-            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm">
+            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm transition-transform duration-200 hover:-translate-y-1">
               <p className="text-xs uppercase tracking-[0.4em] text-accent-orange font-semibold mb-2 font-body">
                 Consultant partnership
               </p>
@@ -143,7 +143,7 @@ const Index = () => {
                 </a>
               </Button>
             </div>
-            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm">
+            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm transition-transform duration-200 hover:-translate-y-1">
               <p className="text-xs uppercase tracking-[0.4em] text-accent-teal font-semibold mb-2 font-body">
                 Startup nonprofit
               </p>
@@ -179,7 +179,7 @@ const Index = () => {
 
           <div className="grid md:grid-cols-3 gap-6">
             {/* YMCA of the North */}
-            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm">
+            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm transition-transform duration-200 hover:-translate-y-1">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 rounded-full bg-accent-teal/20 flex items-center justify-center text-sm font-semibold text-accent-teal">
                   AB
@@ -198,7 +198,7 @@ const Index = () => {
             </div>
 
             {/* Westwood Community Church */}
-            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm">
+            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm transition-transform duration-200 hover:-translate-y-1">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 rounded-full bg-accent-orange/20 flex items-center justify-center text-sm font-semibold text-accent-orange">
                   JH
@@ -218,7 +218,7 @@ const Index = () => {
             </div>
 
             {/* Brave Fundraising / Heidi */}
-            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm">
+            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm transition-transform duration-200 hover:-translate-y-1">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 rounded-full bg-accent-teal/20 flex items-center justify-center text-sm font-semibold text-accent-teal">
                   HF
@@ -246,25 +246,25 @@ const Index = () => {
           <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-ink tracking-tight leading-tight">What we do</h2>
           <p className="font-body text-xl text-muted-foreground mb-12">Strategy in, content out.</p>
           <div className="grid sm:grid-cols-2 gap-6">
-            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm">
+            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm transition-transform duration-200 hover:-translate-y-1">
               <h3 className="font-heading text-xl font-semibold mb-2 text-accent-orange">Messaging & Story Capture</h3>
               <p className="font-body text-muted-foreground">
                 We listen, ask the right questions, and shape your impact into donor-ready narratives.
               </p>
             </div>
-            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm">
+            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm transition-transform duration-200 hover:-translate-y-1">
               <h3 className="font-heading text-xl font-semibold mb-2 text-accent-teal">Campaign & Donor Content</h3>
               <p className="font-body text-muted-foreground">
                 Appeals, case statements, impact reports, and fundraising materials that move people to give.
               </p>
             </div>
-            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm">
+            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm transition-transform duration-200 hover:-translate-y-1">
               <h3 className="font-heading text-xl font-semibold mb-2 text-accent-orange">Social & Web Updates</h3>
               <p className="font-body text-muted-foreground">
                 Consistent, on-brand content that keeps your community engaged and informed.
               </p>
             </div>
-            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm">
+            <div className="p-6 bg-card rounded-md border border-ink/5 shadow-sm transition-transform duration-200 hover:-translate-y-1">
               <h3 className="font-heading text-xl font-semibold mb-2 text-accent-teal">Fractional Marketing Support</h3>
               <p className="font-body text-muted-foreground">
                 Month-to-month partnership that scales with your needs—no full-time hire required.
@@ -276,12 +276,12 @@ const Index = () => {
 
       {/* How It Works */}
       <section id="process" className="py-24 px-6 bg-cream relative overflow-hidden">
-        {/* Olivetti-style background word-stack */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none opacity-[0.03] select-none">
-          <p className="hidden md:block font-heading text-[10rem] md:text-[15rem] font-bold leading-none tracking-tighter">LISTEN</p>
-          <p className="hidden md:block font-heading text-[10rem] md:text-[15rem] font-bold leading-none tracking-tighter">SHAPE</p>
-          <p className="hidden lg:block font-heading text-[10rem] md:text-[15rem] font-bold leading-none tracking-tighter">DELIVER</p>
-          <p className="hidden lg:block font-heading text-[10rem] md:text-[15rem] font-bold leading-none tracking-tighter">REPEAT</p>
+        {/* Olivetti-style background word-stack - desktop only */}
+        <div className="hidden lg:flex absolute inset-0 flex-col items-center justify-center pointer-events-none opacity-[0.03] select-none">
+          <p className="font-heading text-[15rem] font-bold leading-none tracking-tighter">LISTEN</p>
+          <p className="font-heading text-[15rem] font-bold leading-none tracking-tighter">SHAPE</p>
+          <p className="font-heading text-[15rem] font-bold leading-none tracking-tighter">DELIVER</p>
+          <p className="font-heading text-[15rem] font-bold leading-none tracking-tighter">REPEAT</p>
         </div>
         <div className="max-w-4xl mx-auto relative z-10">
           <p className="text-xs uppercase tracking-[0.4em] text-accent-orange font-semibold mb-4 font-body">Process</p>

@@ -1,4 +1,4 @@
-import { Calendar, Mail, Linkedin } from "lucide-react";
+import { Calendar, Mail } from "lucide-react";
 
 const BOOKING_URL =
   import.meta.env.VITE_BOOKING_URL ||
@@ -35,16 +35,6 @@ export default function SiteFooter() {
             >
               <Calendar className="h-4 w-4" aria-hidden="true" />
               Book a call
-            </a>
-            <a 
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Connect with Labor & Delivery on LinkedIn"
-              className="inline-flex items-center justify-center md:justify-start gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors font-body"
-            >
-              <Linkedin className="h-4 w-4" aria-hidden="true" />
-              LinkedIn
             </a>
           </div>
 

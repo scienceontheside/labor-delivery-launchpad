@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "@/hooks/use-toast";
@@ -10,6 +10,26 @@ export default function EmailCapture() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { ref, isVisible } = useScrollAnimation(0.1);
+
+  // Load Mailchimp Connected Site script
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.id = "mcjs";
+    script.async = true;
+    script.src = "https://chimpstatic.com/mcjs-connected/js/users/e64041b30f4215d10c78d28c1/c8d08e947be376c3f268d9ce0.js";
+    
+    // Only add if not already present
+    if (!document.getElementById("mcjs")) {
+      document.body.appendChild(script);
+    }
+
+    return () => {
+      const existingScript = document.getElementById("mcjs");
+      if (existingScript) {
+        existingScript.remove();
+      }
+    };
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -24,10 +44,11 @@ export default function EmailCapture() {
 
     setIsSubmitting(true);
 
-    // Simulate API call delay
+    // TODO: Replace with actual Mailchimp form action URL
+    // You'll need the Mailchimp embedded form action URL (e.g., https://xyz.us21.list-manage.com/subscribe/post?u=xxx&id=xxx)
+    // For now, simulating submission - the Connected Site script enables pop-ups/tracking
     await new Promise((resolve) => setTimeout(resolve, 1500));
 
-    // TODO: Connect to email service
     setIsSubmitting(false);
     setIsSubmitted(true);
     toast({

@@ -1,25 +1,59 @@
+import { Calendar, Mail, Linkedin } from "lucide-react";
+
+const BOOKING_URL =
+  import.meta.env.VITE_BOOKING_URL ||
+  "https://calendar.app.google/yrFu89XL25QduC6S6";
+
 export default function SiteFooter() {
   return (
-    <footer className="py-12 px-6 border-t border-ink/5">
-      <div className="max-w-4xl mx-auto">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 text-center md:text-left">
+    <footer className="py-12 md:py-16 px-5 md:px-6 border-t border-ink/5">
+      <div className="max-w-5xl mx-auto">
+        <div className="grid gap-8 md:grid-cols-3 text-center md:text-left">
+          {/* Left - Brand */}
           <div>
-            <p className="font-display text-lg text-foreground">Labor & Delivery</p>
+            <p className="font-heading text-lg font-semibold text-foreground">Labor & Delivery</p>
             <p className="font-body text-sm text-muted-foreground mt-1">Nonprofit Communications</p>
+            <p className="font-body text-sm text-muted-foreground mt-1">Minneapolis, MN</p>
           </div>
-          
-          <div className="flex flex-col md:flex-row gap-4 md:gap-8 text-sm text-muted-foreground">
+
+          {/* Center - Contact */}
+          <div className="flex flex-col gap-2">
             <a 
-              href="mailto:hello@laboranddelivery.co" 
-              className="hover:text-foreground transition-colors"
+              href="mailto:hello@laboranddelivery.co"
+              className="inline-flex items-center justify-center md:justify-start gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors font-body"
             >
+              <Mail className="h-4 w-4" />
               hello@laboranddelivery.co
             </a>
-            <span>Saint Paul, MN</span>
+            <a 
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center md:justify-start gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors font-body"
+            >
+              <Calendar className="h-4 w-4" />
+              Book a call
+            </a>
+            <a 
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center md:justify-start gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors font-body"
+            >
+              <Linkedin className="h-4 w-4" />
+              LinkedIn
+            </a>
+          </div>
+
+          {/* Right - Hours */}
+          <div className="md:text-right">
+            <p className="font-body text-sm text-muted-foreground">Monday–Thursday</p>
+            <p className="font-body text-sm text-muted-foreground mt-1">9 AM – 3 PM Central</p>
           </div>
         </div>
-        
-        <div className="mt-8 pt-6 border-t border-ink/5 text-center">
+
+        {/* Bottom - Copyright */}
+        <div className="mt-10 pt-6 border-t border-ink/5 text-center">
           <p className="font-body text-xs text-muted-foreground">
             © 2024 Labor & Delivery
           </p>

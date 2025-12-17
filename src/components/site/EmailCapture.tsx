@@ -1,32 +1,24 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "@/hooks/use-toast";
 import { Check, Loader2 } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
+const MAILCHIMP_URL = "https://laboranddelivery.us20.list-manage.com/subscribe/post-json?u=e64041b30f4215d10c78d28c1&id=a930281675&c=?";
+
 export default function EmailCapture() {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { ref, isVisible } = useScrollAnimation(0.1);
+  const callbackRef = useRef<string>("");
 
-  // Load Mailchimp Connected Site script
+  // Cleanup JSONP callback on unmount
   useEffect(() => {
-    const script = document.createElement("script");
-    script.id = "mcjs";
-    script.async = true;
-    script.src = "https://chimpstatic.com/mcjs-connected/js/users/e64041b30f4215d10c78d28c1/c8d08e947be376c3f268d9ce0.js";
-    
-    // Only add if not already present
-    if (!document.getElementById("mcjs")) {
-      document.body.appendChild(script);
-    }
-
     return () => {
-      const existingScript = document.getElementById("mcjs");
-      if (existingScript) {
-        existingScript.remove();
+      if (callbackRef.current && (window as any)[callbackRef.current]) {
+        delete (window as any)[callbackRef.current];
       }
     };
   }, []);
@@ -44,17 +36,57 @@ export default function EmailCapture() {
 
     setIsSubmitting(true);
 
-    // TODO: Replace with actual Mailchimp form action URL
-    // You'll need the Mailchimp embedded form action URL (e.g., https://xyz.us21.list-manage.com/subscribe/post?u=xxx&id=xxx)
-    // For now, simulating submission - the Connected Site script enables pop-ups/tracking
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    // Create unique callback name
+    const callbackName = `mailchimpCallback_${Date.now()}`;
+    callbackRef.current = callbackName;
 
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    toast({
-      title: "Check your inbox!",
-      description: "Your guide is on its way.",
-    });
+    // Create JSONP callback
+    (window as any)[callbackName] = (response: { result: string; msg: string }) => {
+      setIsSubmitting(false);
+      
+      if (response.result === "success") {
+        setIsSubmitted(true);
+        toast({
+          title: "Check your inbox!",
+          description: "Your guide is on its way.",
+        });
+      } else {
+        // Handle "already subscribed" as success
+        if (response.msg.includes("already subscribed")) {
+          setIsSubmitted(true);
+          toast({
+            title: "You're already subscribed!",
+            description: "Check your inbox for the guide.",
+          });
+        } else {
+          toast({
+            title: "Something went wrong",
+            description: response.msg.replace(/<[^>]*>/g, ""),
+            variant: "destructive",
+          });
+        }
+      }
+
+      // Cleanup
+      delete (window as any)[callbackName];
+    };
+
+    // Build URL and submit via JSONP
+    const url = `${MAILCHIMP_URL.replace("c=?", `c=${callbackName}`)}&EMAIL=${encodeURIComponent(email)}`;
+    
+    const script = document.createElement("script");
+    script.src = url;
+    script.onerror = () => {
+      setIsSubmitting(false);
+      toast({
+        title: "Connection error",
+        description: "Please try again.",
+        variant: "destructive",
+      });
+      delete (window as any)[callbackName];
+    };
+    document.body.appendChild(script);
+    script.remove();
   };
 
   return (

@@ -8,10 +8,12 @@ import Pricing from "@/components/site/Pricing";
 import Process from "@/components/site/Process";
 import CTA from "@/components/site/CTA";
 import SiteFooter from "@/components/site/SiteFooter";
+import StickyHeader from "@/components/site/StickyHeader";
 
 const Index = () => {
   return (
     <main className="min-h-screen bg-background">
+      <StickyHeader />
       <Hero />
       <Audience />
       <WorkGrid />

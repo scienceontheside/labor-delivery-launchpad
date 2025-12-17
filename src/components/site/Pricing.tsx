@@ -1,8 +1,15 @@
 import { Panel } from "@/components/ui/Panel";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 export default function Pricing() {
+  const { ref, isVisible } = useScrollAnimation(0.1);
+
   return (
-    <section id="pricing" className="py-12 md:py-24 px-5 md:px-6 bg-background border-t border-ink/5">
+    <section
+      ref={ref}
+      id="pricing"
+      className={`py-12 md:py-24 px-5 md:px-6 bg-background border-t border-ink/5 transition-all duration-[600ms] ease-out ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
+    >
       <div className="max-w-4xl mx-auto">
         <p className="text-xs tracking-[0.4em] uppercase text-accent-orange font-semibold mb-4 font-body">Investment</p>
         <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-ink tracking-tight leading-tight">Transparent Pricing</h2>

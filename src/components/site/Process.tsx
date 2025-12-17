@@ -1,12 +1,19 @@
 import { CTAButtons } from "@/components/ui/CTAButtons";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const scrollToSection = (id: string) => {
   document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 };
 
 export default function Process() {
+  const { ref, isVisible } = useScrollAnimation(0.1);
+
   return (
-    <section id="process" className="py-12 md:py-24 px-5 md:px-6 bg-cream relative overflow-hidden">
+    <section
+      ref={ref}
+      id="process"
+      className={`py-12 md:py-24 px-5 md:px-6 bg-cream relative overflow-hidden transition-all duration-[600ms] ease-out ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
+    >
       {/* Olivetti-style background word-stack - desktop only */}
       <div className="hidden lg:flex absolute inset-0 flex-col items-center justify-center pointer-events-none opacity-[0.02] select-none">
         <p className="font-heading text-[15rem] font-bold leading-none tracking-tighter">LISTEN</p>

@@ -18,7 +18,7 @@ export default function Audience() {
 
       {/* title and intro */}
       <div className="max-w-[720px] space-y-4 mb-8">
-        <h2 className="text-[2.25rem] leading-[1.05] font-semibold text-[hsl(var(--foreground))]">
+        <h2 className="text-2xl sm:text-3xl md:text-[2.25rem] leading-[1.1] font-semibold text-[hsl(var(--foreground))]">
           Built for big-hearted nonprofits that aren't ready to add staff.
         </h2>
         <p className="text-base md:text-lg text-[hsl(var(--muted-foreground))] leading-relaxed">

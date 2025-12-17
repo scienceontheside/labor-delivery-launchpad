@@ -6,7 +6,7 @@ const scrollToSection = (id: string) => {
 
 export default function Process() {
   return (
-    <section id="process" className="py-16 md:py-24 px-6 bg-cream relative overflow-hidden">
+    <section id="process" className="py-12 md:py-24 px-5 md:px-6 bg-cream relative overflow-hidden">
       {/* Olivetti-style background word-stack - desktop only */}
       <div className="hidden lg:flex absolute inset-0 flex-col items-center justify-center pointer-events-none opacity-[0.02] select-none">
         <p className="font-heading text-[15rem] font-bold leading-none tracking-tighter">LISTEN</p>
@@ -16,7 +16,7 @@ export default function Process() {
       </div>
       <div className="max-w-4xl mx-auto relative z-10">
         <p className="text-xs tracking-[0.4em] uppercase text-accent-orange font-semibold mb-4 font-body">How It Works</p>
-        <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-ink tracking-tight leading-tight">A simple 4-step delivery model.</h2>
+        <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-ink tracking-tight leading-tight">A simple 4-step delivery model.</h2>
         <div className="grid md:grid-cols-2 gap-8 mb-12 md:ml-0">
           <div className="space-y-3">
             <h3 className="font-heading text-2xl font-semibold text-accent-orange">1. Listen</h3>

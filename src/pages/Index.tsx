@@ -6,6 +6,7 @@ import EmailCapture from "@/components/site/EmailCapture";
 import Services from "@/components/site/Services";
 import Pricing from "@/components/site/Pricing";
 import Process from "@/components/site/Process";
+import FAQ from "@/components/site/FAQ";
 import CTA from "@/components/site/CTA";
 import SiteFooter from "@/components/site/SiteFooter";
 import StickyHeader from "@/components/site/StickyHeader";
@@ -22,6 +23,7 @@ const Index = () => {
       <Services />
       <Pricing />
       <Process />
+      <FAQ />
       <CTA />
       <SiteFooter />
     </main>

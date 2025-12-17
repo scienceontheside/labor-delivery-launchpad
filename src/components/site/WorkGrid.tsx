@@ -19,9 +19,25 @@ export default function WorkGrid() {
               Small youth nonprofit
             </p>
             <h3 className="font-heading text-xl font-semibold mb-2">Donor update series</h3>
-            <p className="font-body text-muted-foreground mb-4">
-              3-email nurture + social posts to support a consultant-led appeal.
+            <p className="font-body text-muted-foreground mb-3">
+              3-email nurture + social posts to support a consultant-led appeal
             </p>
+            <ul className="font-body text-sm text-muted-foreground space-y-1.5 mb-3">
+              <li className="flex gap-2">
+                <span className="text-accent-orange">•</span>
+                <span>Email 1: Impact story (Why now matters)</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-accent-orange">•</span>
+                <span>Email 2: The ask (Clear, warm, donor-centric)</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-accent-orange">•</span>
+                <span>Email 3: Gratitude & next steps</span>
+              </li>
+            </ul>
+            <p className="font-body text-sm text-muted-foreground mb-1">Plus 6 Instagram captions with content direction</p>
+            <p className="font-body text-sm font-medium text-accent-teal mb-4">→ Delivered in 10 days</p>
             <button
               onClick={() => window.open("https://calendar.app.google/yrFu89XL25QduC6S6", "_blank")}
               className="inline-flex items-center gap-2 text-[#A47864] hover:text-[#8B6250] transition-colors font-body text-sm py-2 min-h-[44px]"

@@ -20,26 +20,30 @@ export default function Process() {
         <div className="grid md:grid-cols-2 gap-8 mb-12 md:ml-0">
           <div className="space-y-3">
             <h3 className="font-heading text-2xl font-semibold text-accent-orange">1. Listen</h3>
+            <p className="font-body text-sm text-muted-foreground/70 mb-1">30 minutes on Zoom</p>
             <p className="font-body text-muted-foreground text-lg">
-              30 minutes on Zoom.
+              We ask the right questions. You talk about your work, we take notes on what matters.
             </p>
           </div>
           <div className="space-y-3">
             <h3 className="font-heading text-2xl font-semibold text-accent-teal">2. Shape</h3>
+            <p className="font-body text-sm text-muted-foreground/70 mb-1">First drafts in 3-5 days</p>
             <p className="font-body text-muted-foreground text-lg">
-              We draft the pieces you need first.
+              We draft the pieces you need first. We nail your voice because we listened.
             </p>
           </div>
           <div className="space-y-3">
             <h3 className="font-heading text-2xl font-semibold text-accent-orange">3. Deliver</h3>
+            <p className="font-body text-sm text-muted-foreground/70 mb-1">One round of revisions included</p>
             <p className="font-body text-muted-foreground text-lg">
-              You get ready-to-send content.
+              You review, we refine. Then it's ready to send to your list.
             </p>
           </div>
           <div className="space-y-3">
             <h3 className="font-heading text-2xl font-semibold text-accent-teal">4. Repeat</h3>
+            <p className="font-body text-sm text-muted-foreground/70 mb-1">No contracts, month-to-month</p>
             <p className="font-body text-muted-foreground text-lg">
-              Add more pieces month to month.
+              Add more pieces as you need them. Pause anytime. We're flexible.
             </p>
           </div>
         </div>

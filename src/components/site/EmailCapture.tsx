@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "@/hooks/use-toast";
+import { Check } from "lucide-react";
 
 export default function EmailCapture() {
   const [email, setEmail] = useState("");
@@ -40,9 +41,12 @@ export default function EmailCapture() {
         </p>
 
         {isSubmitted ? (
-          <div className="bg-background/50 rounded-lg p-6">
-            <p className="font-heading text-xl font-semibold text-accent-teal mb-2">You're all set!</p>
-            <p className="font-body text-muted-foreground">Check your email for the guide.</p>
+          <div className="bg-accent-teal/10 border border-accent-teal/20 rounded-xl p-8 animate-fade-in">
+            <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-accent-teal/20 mb-4">
+              <Check className="w-7 h-7 text-accent-teal" strokeWidth={3} />
+            </div>
+            <p className="font-heading text-2xl md:text-3xl font-bold text-accent-teal mb-2">You're all set!</p>
+            <p className="font-body text-base md:text-lg text-muted-foreground">Check your email in the next 5 minutes.</p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">

@@ -20,27 +20,30 @@ export default function SiteFooter() {
           <div className="flex flex-col gap-2">
             <a 
               href="mailto:hello@laboranddelivery.org"
+              aria-label="Email Labor & Delivery at hello@laboranddelivery.org"
               className="inline-flex items-center justify-center md:justify-start gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors font-body"
             >
-              <Mail className="h-4 w-4" />
+              <Mail className="h-4 w-4" aria-hidden="true" />
               hello@laboranddelivery.org
             </a>
             <a 
               href={BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Book a call with Labor & Delivery"
               className="inline-flex items-center justify-center md:justify-start gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors font-body"
             >
-              <Calendar className="h-4 w-4" />
+              <Calendar className="h-4 w-4" aria-hidden="true" />
               Book a call
             </a>
             <a 
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Connect with Labor & Delivery on LinkedIn"
               className="inline-flex items-center justify-center md:justify-start gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors font-body"
             >
-              <Linkedin className="h-4 w-4" />
+              <Linkedin className="h-4 w-4" aria-hidden="true" />
               LinkedIn
             </a>
           </div>

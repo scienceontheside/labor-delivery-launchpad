@@ -41,11 +41,12 @@ export default function StickyHeader() {
           href={BOOKING_URL}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Book a call with Labor & Delivery"
           className="inline-flex items-center justify-center gap-2 rounded-full text-sm md:text-base font-medium transition-all duration-150 bg-accent-orange text-white hover:bg-accent-orange/90 px-4 md:px-6 py-2 md:py-2.5"
         >
           <span className="hidden sm:inline">Book a call</span>
           <span className="sm:hidden">Book</span>
-          <Calendar className="h-4 w-4 md:h-5 md:w-5" />
+          <Calendar className="h-4 w-4 md:h-5 md:w-5" aria-hidden="true" />
         </a>
       </div>
     </header>

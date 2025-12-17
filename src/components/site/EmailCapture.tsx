@@ -5,7 +5,7 @@ import { toast } from "@/hooks/use-toast";
 import { Check, Loader2 } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
-const MAILCHIMP_URL = "https://laboranddelivery.us20.list-manage.com/subscribe/post-json?u=e64041b30f4215d10c78d28c1&id=a930281675&c=?";
+const MAILCHIMP_URL = import.meta.env.VITE_MAILCHIMP_URL || "https://laboranddelivery.us20.list-manage.com/subscribe/post-json?u=e64041b30f4215d10c78d28c1&id=a930281675&c=?";
 
 export default function EmailCapture() {
   const [email, setEmail] = useState("");

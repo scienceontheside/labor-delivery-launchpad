@@ -103,7 +103,7 @@ export default function Hero() {
 
           {/* surprise line */}
           <p className="text-[0.7rem] tracking-[0.25em] uppercase text-[hsl(var(--hero-on))]/65 mt-1">
-            No cause too big. No nonprofit too small.
+            No cause too big. No nonprofit too small. (And no timeline too tight.)
           </p>
 
           {/* microcopy */}

@@ -2,23 +2,22 @@ import { Panel } from "@/components/ui/Panel";
 
 export default function Testimonials() {
   return (
-    <section className="py-16 md:py-24 px-6 bg-cream">
+    <section className="py-12 md:py-24 px-5 md:px-6 bg-cream">
       <div className="max-w-5xl mx-auto">
-        <p className="font-body text-sm text-muted-foreground/70 text-center mb-12 tracking-wide">
+        <p className="font-body text-sm text-muted-foreground/70 text-center mb-8 md:mb-12 tracking-wide">
           No cause too big. No nonprofit too small.
         </p>
-        <p className="text-xs tracking-[0.35em] uppercase text-accent-orange font-semibold mb-4 font-body">
+        <p className="text-xs tracking-[0.35em] uppercase text-accent-orange font-semibold mb-4 font-body text-center">
           What leaders are saying
         </p>
-        <h2 className="font-heading text-4xl md:text-5xl font-bold mb-4 text-ink text-center tracking-tight leading-tight">
+        <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-ink text-center tracking-tight leading-tight">
           Trusted by big-hearted, short-on-time teams.
         </h2>
-        <p className="font-body text-lg md:text-xl text-muted-foreground mb-12 md:mb-16 text-center">
+        <p className="font-body text-base md:text-lg lg:text-xl text-muted-foreground mb-10 md:mb-16 text-center">
           Recommended by Twin Cities nonprofit and fundraising leaders.
         </p>
 
-
-        <div className="space-y-5 md:space-y-0 md:grid md:grid-cols-3 md:gap-8">
+        <div className="space-y-5 md:space-y-0 md:grid md:grid-cols-3 md:gap-6">
           {/* YMCA of the North */}
           <Panel>
             <div className="flex items-center gap-3 mb-4">

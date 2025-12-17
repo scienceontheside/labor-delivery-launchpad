@@ -8,9 +8,9 @@ export default function CTA() {
   return (
     <>
       {/* Contact / CTA */}
-      <section id="contact" className="py-16 md:py-24 px-6 bg-cream">
-        <div className="max-w-2xl mx-auto text-center space-y-6">
-          <h2 className="font-heading text-4xl md:text-5xl font-bold text-ink tracking-tight leading-tight">
+      <section id="contact" className="py-12 md:py-24 px-5 md:px-6 bg-cream">
+        <div className="max-w-2xl mx-auto text-center space-y-5 md:space-y-6">
+          <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-ink tracking-tight leading-tight">
             Let's tell the story of your good work.
           </h2>
           <p className="font-body text-xl text-muted-foreground">

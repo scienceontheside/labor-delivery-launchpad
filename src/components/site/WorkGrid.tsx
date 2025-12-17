@@ -4,16 +4,16 @@ import { ArrowRight } from "lucide-react";
 
 export default function WorkGrid() {
   return (
-    <section className="py-16 md:py-24 px-6 bg-background">
+    <section className="py-12 md:py-24 px-5 md:px-6 bg-background">
       <div className="max-w-5xl mx-auto">
         <p className="text-xs tracking-[0.4em] uppercase text-accent-orange font-semibold mb-4 font-body">Recent Work</p>
-        <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-ink tracking-tight leading-tight">
+        <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-ink tracking-tight leading-tight">
           Work we've delivered
         </h2>
-        <p className="font-body text-lg text-muted-foreground mb-10">
+        <p className="font-body text-base md:text-lg text-muted-foreground mb-8 md:mb-10">
           Built in partnership with leaders like you.
         </p>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid gap-5 md:grid-cols-3 md:gap-6">
           <Panel>
             <p className="text-xs uppercase tracking-[0.4em] text-accent-teal font-semibold mb-2 font-body">
               Small youth nonprofit
@@ -24,7 +24,7 @@ export default function WorkGrid() {
             </p>
             <button
               onClick={() => window.open("https://calendar.app.google/yrFu89XL25QduC6S6", "_blank")}
-              className="inline-flex items-center gap-2 text-[#A47864] hover:text-[#8B6250] transition-colors font-body text-sm"
+              className="inline-flex items-center gap-2 text-[#A47864] hover:text-[#8B6250] transition-colors font-body text-sm py-2 min-h-[44px]"
             >
               Let's make this for you <ArrowRight size={16} />
             </button>
@@ -39,7 +39,7 @@ export default function WorkGrid() {
             </p>
             <button
               onClick={() => window.open("https://calendar.app.google/yrFu89XL25QduC6S6", "_blank")}
-              className="inline-flex items-center gap-2 text-[#A47864] hover:text-[#8B6250] transition-colors font-body text-sm"
+              className="inline-flex items-center gap-2 text-[#A47864] hover:text-[#8B6250] transition-colors font-body text-sm py-2 min-h-[44px]"
             >
               Book this project <ArrowRight size={16} />
             </button>
@@ -54,7 +54,7 @@ export default function WorkGrid() {
             </p>
             <button
               onClick={() => window.open("https://calendar.app.google/yrFu89XL25QduC6S6", "_blank")}
-              className="inline-flex items-center gap-2 text-[#A47864] hover:text-[#8B6250] transition-colors font-body text-sm"
+              className="inline-flex items-center gap-2 text-[#A47864] hover:text-[#8B6250] transition-colors font-body text-sm py-2 min-h-[44px]"
             >
               Copy this format <ArrowRight size={16} />
             </button>

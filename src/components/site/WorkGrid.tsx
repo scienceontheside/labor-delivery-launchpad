@@ -26,7 +26,7 @@ export default function WorkGrid() {
               onClick={() => window.open("https://calendar.app.google/yrFu89XL25QduC6S6", "_blank")}
               className="inline-flex items-center gap-2 text-[#A47864] hover:text-[#8B6250] transition-colors font-body text-sm py-2 min-h-[44px]"
             >
-              Let's make this for you <ArrowRight size={16} />
+              Start with something like this <ArrowRight size={16} />
             </button>
           </Panel>
           <Panel>
@@ -41,7 +41,7 @@ export default function WorkGrid() {
               onClick={() => window.open("https://calendar.app.google/yrFu89XL25QduC6S6", "_blank")}
               className="inline-flex items-center gap-2 text-[#A47864] hover:text-[#8B6250] transition-colors font-body text-sm py-2 min-h-[44px]"
             >
-              Book this project <ArrowRight size={16} />
+              Start with something like this <ArrowRight size={16} />
             </button>
           </Panel>
           <Panel>
@@ -56,7 +56,7 @@ export default function WorkGrid() {
               onClick={() => window.open("https://calendar.app.google/yrFu89XL25QduC6S6", "_blank")}
               className="inline-flex items-center gap-2 text-[#A47864] hover:text-[#8B6250] transition-colors font-body text-sm py-2 min-h-[44px]"
             >
-              Copy this format <ArrowRight size={16} />
+              Start with something like this <ArrowRight size={16} />
             </button>
           </Panel>
         </div>

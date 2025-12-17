@@ -16,7 +16,7 @@ export function BookCallButton({
   children = "Book a call",
 }: Props) {
   const base =
-    "inline-flex items-center justify-center gap-2 rounded-full text-base font-medium transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2";
+    "inline-flex items-center justify-center gap-2 rounded-full text-base font-medium transition-all duration-150 hover:scale-[1.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2";
   
   const variants: Record<string, string> = {
     primary:

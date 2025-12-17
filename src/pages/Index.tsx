@@ -2,6 +2,7 @@ import Hero from "@/components/site/Hero";
 import Audience from "@/components/site/Audience";
 import WorkGrid from "@/components/site/WorkGrid";
 import Testimonials from "@/components/site/Testimonials";
+import EmailCapture from "@/components/site/EmailCapture";
 import Services from "@/components/site/Services";
 import Pricing from "@/components/site/Pricing";
 import Process from "@/components/site/Process";
@@ -15,6 +16,7 @@ const Index = () => {
       <Audience />
       <WorkGrid />
       <Testimonials />
+      <EmailCapture />
       <Services />
       <Pricing />
       <Process />

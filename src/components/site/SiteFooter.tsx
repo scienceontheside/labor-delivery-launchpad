@@ -58,7 +58,7 @@ export default function SiteFooter() {
         {/* Bottom - Copyright */}
         <div className="mt-10 pt-6 border-t border-ink/5 text-center">
           <p className="font-body text-xs text-muted-foreground">
-            © 2024 Labor & Delivery
+            © {new Date().getFullYear()} Labor & Delivery
           </p>
         </div>
       </div>

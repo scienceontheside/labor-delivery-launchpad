@@ -56,7 +56,7 @@ export default function Audience() {
             Executive directors
           </h3>
           <p className="text-[hsl(var(--muted-foreground))] leading-relaxed text-sm md:text-base">
-            Running programs, fundraising, HR, and comms — and need someone to take the comms off your plate.
+            Running programs, fundraising, HR, and comms — and somehow also the person who updates the website and posts on social.
           </p>
         </div>
 
@@ -66,7 +66,7 @@ export default function Audience() {
             Small teams
           </h3>
           <p className="text-[hsl(var(--muted-foreground))] leading-relaxed text-sm md:text-base">
-            The "slash" people (development/events/social/newsletter) who need consistent, on-brand content.
+            The "slash" people (development/events/social/newsletter) who wear 5 hats and need consistent, on-brand content that doesn't require hand-holding.
           </p>
         </div>
 
@@ -76,7 +76,7 @@ export default function Audience() {
             Consultants &amp; fundraisers
           </h3>
           <p className="text-[hsl(var(--muted-foreground))] leading-relaxed text-sm md:text-base">
-            You lead the strategy and want a content arm that can move fast with you.
+            You lead the strategy and campaign design. You want a content partner who understands fundraising, moves fast, and makes you look good to your clients.
           </p>
         </div>
       </div>

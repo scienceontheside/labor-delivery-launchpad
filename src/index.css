@@ -160,6 +160,12 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
   
+  /* Global keyboard focus styles for accessibility */
+  *:focus-visible {
+    outline: 2px solid hsl(var(--accent-orange));
+    outline-offset: 2px;
+  }
+  
   /* Icon alignment fix */
   button svg,
   a svg {

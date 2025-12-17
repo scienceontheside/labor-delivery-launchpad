@@ -19,11 +19,11 @@ export default function SiteFooter() {
           {/* Center - Contact */}
           <div className="flex flex-col gap-2">
             <a 
-              href="mailto:hello@laboranddelivery.co"
+              href="mailto:hello@laboranddelivery.org"
               className="inline-flex items-center justify-center md:justify-start gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors font-body"
             >
               <Mail className="h-4 w-4" />
-              hello@laboranddelivery.co
+              hello@laboranddelivery.org
             </a>
             <a 
               href={BOOKING_URL}

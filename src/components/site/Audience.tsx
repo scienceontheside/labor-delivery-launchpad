@@ -1,7 +1,12 @@
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+
 export default function Audience() {
+  const { ref, isVisible } = useScrollAnimation(0.1);
+
   return (
     <section
-      className="
+      ref={ref}
+      className={`
         max-w-[1180px]
         mx-auto
         px-5
@@ -9,7 +14,9 @@ export default function Audience() {
         lg:px-16
         py-14
         bg-[hsl(var(--background))]
-      "
+        transition-all duration-[600ms] ease-out
+        ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}
+      `}
     >
       {/* label */}
       <p className="text-[hsl(var(--accent-orange))] text-[0.8rem] tracking-[0.32em] uppercase mb-4">

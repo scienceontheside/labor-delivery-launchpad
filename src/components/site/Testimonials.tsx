@@ -1,8 +1,14 @@
 import { Panel } from "@/components/ui/Panel";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 export default function Testimonials() {
+  const { ref, isVisible } = useScrollAnimation(0.1);
+
   return (
-    <section className="py-12 md:py-24 px-5 md:px-6 bg-cream">
+    <section
+      ref={ref}
+      className={`py-12 md:py-24 px-5 md:px-6 bg-cream transition-all duration-[600ms] ease-out ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
+    >
       <div className="max-w-5xl mx-auto">
         <p className="font-body text-sm text-muted-foreground/70 text-center mb-8 md:mb-12 tracking-wide">
           No cause too big. No nonprofit too small.

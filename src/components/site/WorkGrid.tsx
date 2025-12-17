@@ -1,10 +1,16 @@
 import { BookCallButton } from "@/components/ui/BookCallButton";
 import { Panel } from "@/components/ui/Panel";
 import { ArrowRight } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 export default function WorkGrid() {
+  const { ref, isVisible } = useScrollAnimation(0.1);
+
   return (
-    <section className="py-12 md:py-24 px-5 md:px-6 bg-background">
+    <section
+      ref={ref}
+      className={`py-12 md:py-24 px-5 md:px-6 bg-background transition-all duration-[600ms] ease-out ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
+    >
       <div className="max-w-5xl mx-auto">
         <p className="text-xs tracking-[0.4em] uppercase text-accent-orange font-semibold mb-4 font-body">Recent Work</p>
         <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-ink tracking-tight leading-tight">

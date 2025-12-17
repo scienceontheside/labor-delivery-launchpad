@@ -2,15 +2,16 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "@/hooks/use-toast";
-import { Check } from "lucide-react";
+import { Check, Loader2 } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 export default function EmailCapture() {
   const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { ref, isVisible } = useScrollAnimation(0.1);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     if (!email || !email.includes("@")) {
@@ -21,7 +22,13 @@ export default function EmailCapture() {
       return;
     }
 
+    setIsSubmitting(true);
+
+    // Simulate API call delay
+    await new Promise((resolve) => setTimeout(resolve, 1500));
+
     // TODO: Connect to email service
+    setIsSubmitting(false);
     setIsSubmitted(true);
     toast({
       title: "Check your inbox!",
@@ -62,12 +69,21 @@ export default function EmailCapture() {
               onChange={(e) => setEmail(e.target.value)}
               className="flex-1 bg-background border-ink/10 font-body"
               required
+              disabled={isSubmitting}
             />
             <Button 
               type="submit"
-              className="bg-accent-orange hover:bg-accent-orange/90 text-white font-body whitespace-nowrap"
+              disabled={isSubmitting}
+              className="bg-accent-orange hover:bg-accent-orange/90 text-white font-body whitespace-nowrap min-w-[160px]"
             >
-              Download the Guide
+              {isSubmitting ? (
+                <>
+                  <Loader2 className="h-4 w-4 animate-spin" />
+                  Sending...
+                </>
+              ) : (
+                "Download the Guide"
+              )}
             </Button>
           </form>
         )}

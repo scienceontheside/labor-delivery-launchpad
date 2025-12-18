@@ -101,6 +101,11 @@ export default function Hero() {
             </button>
           </div>
 
+          {/* rush availability */}
+          <p className="text-sm text-[hsl(var(--hero-on))]/70 mt-2">
+            ⚡ Need it this week? Rush projects available for active campaigns.
+          </p>
+
           {/* surprise line */}
           <p className="text-[0.7rem] tracking-[0.25em] uppercase text-[hsl(var(--hero-on))]/65 mt-1">
             No cause too big. No nonprofit too small. (And no timeline too tight.)

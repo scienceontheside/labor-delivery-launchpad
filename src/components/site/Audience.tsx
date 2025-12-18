@@ -24,7 +24,7 @@ export default function Audience() {
       </p>
 
       {/* 3 audience columns */}
-      <div className="grid gap-10 md:grid-cols-3">
+      <div className="grid gap-12 md:gap-16 md:grid-cols-3">
         <div className="space-y-3">
           <h3 className="text-[hsl(var(--accent-orange))] font-semibold text-lg">
             Executive directors

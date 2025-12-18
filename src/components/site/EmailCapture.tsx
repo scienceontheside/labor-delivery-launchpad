@@ -144,6 +144,16 @@ export default function EmailCapture() {
         <p className="font-body text-xs text-muted-foreground mt-4">
           We respect your inbox. Unsubscribe anytime.
         </p>
+
+        <p className="font-body text-sm text-muted-foreground mt-6">
+          Quick question? Email{" "}
+          <a 
+            href="mailto:hello@laboranddelivery.org" 
+            className="text-accent-teal hover:text-accent-teal/80 transition-colors underline underline-offset-2"
+          >
+            hello@laboranddelivery.org
+          </a>
+        </p>
       </div>
     </section>
   );

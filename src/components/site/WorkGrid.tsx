@@ -56,9 +56,24 @@ export default function WorkGrid() {
               Consultant partnership
             </p>
             <h3 className="font-heading text-xl font-semibold mb-2">Case → content</h3>
-            <p className="font-body text-muted-foreground mb-4">
+            <p className="font-body text-muted-foreground mb-3">
               Turned a fundraising case into email, social, and board talking points.
             </p>
+            <ul className="font-body text-sm text-muted-foreground space-y-1.5 mb-3">
+              <li className="flex gap-2">
+                <span className="text-accent-orange">•</span>
+                <span>Email series (3 donor communications)</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-accent-orange">•</span>
+                <span>Social media content (6 posts with visuals)</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-accent-orange">•</span>
+                <span>Board talking points (1-pager)</span>
+              </li>
+            </ul>
+            <p className="font-body text-sm font-medium text-accent-teal mb-4">→ Delivered in 7 days</p>
             <button
               onClick={() => window.open("https://calendar.app.google/yrFu89XL25QduC6S6", "_blank")}
               className="inline-flex items-center gap-2 text-[#A47864] hover:text-[#8B6250] transition-colors font-body text-sm py-2 min-h-[44px]"
@@ -71,9 +86,24 @@ export default function WorkGrid() {
               Startup nonprofit
             </p>
             <h3 className="font-heading text-xl font-semibold mb-2">Story & boilerplate</h3>
-            <p className="font-body text-muted-foreground mb-4">
+            <p className="font-body text-muted-foreground mb-3">
               Founder interview, origin story, and web copy to launch the org.
             </p>
+            <ul className="font-body text-sm text-muted-foreground space-y-1.5 mb-3">
+              <li className="flex gap-2">
+                <span className="text-accent-orange">•</span>
+                <span>Founder story (compelling narrative)</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-accent-orange">•</span>
+                <span>About page copy (mission-driven)</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-accent-orange">•</span>
+                <span>Boilerplate (3 lengths: 25, 50, 100 words)</span>
+              </li>
+            </ul>
+            <p className="font-body text-sm font-medium text-accent-teal mb-4">→ Delivered in 5 days</p>
             <button
               onClick={() => window.open("https://calendar.app.google/yrFu89XL25QduC6S6", "_blank")}
               className="inline-flex items-center gap-2 text-[#A47864] hover:text-[#8B6250] transition-colors font-body text-sm py-2 min-h-[44px]"

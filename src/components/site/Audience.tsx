@@ -87,11 +87,6 @@ export default function Audience() {
           </p>
         </div>
       </div>
-
-      {/* partnership line */}
-      <p className="mt-10 text-sm text-[hsl(var(--muted-foreground))]">
-        Built in partnership with leaders like you.
-      </p>
     </section>
   );
 }

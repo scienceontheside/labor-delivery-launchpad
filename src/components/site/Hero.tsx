@@ -108,7 +108,7 @@ export default function Hero() {
 
           {/* microcopy */}
           <p className="text-xs text-[hsl(var(--hero-on))]/60 mt-1 pb-2">
-            30 minutes on Zoom · we pick 1–2 pieces to ship first.
+            30-minute video call · we pick 1–2 pieces to ship first.
           </p>
         </div>
       </div>

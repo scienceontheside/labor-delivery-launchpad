@@ -21,6 +21,9 @@ export default function WorkGrid() {
         </p>
         <div className="grid gap-5 md:grid-cols-3 md:gap-6">
           <Panel>
+            <span className="inline-block px-3 py-1 rounded-full bg-accent-teal/20 text-accent-teal text-xs font-semibold uppercase tracking-wider mb-2">
+              Youth Development
+            </span>
             <p className="text-xs uppercase tracking-[0.4em] text-accent-teal font-semibold mb-2 font-body">
               Small youth nonprofit
             </p>
@@ -52,6 +55,9 @@ export default function WorkGrid() {
             </button>
           </Panel>
           <Panel>
+            <span className="inline-block px-3 py-1 rounded-full bg-accent-teal/20 text-accent-teal text-xs font-semibold uppercase tracking-wider mb-2">
+              Consultant Partnership
+            </span>
             <p className="text-xs uppercase tracking-[0.4em] text-accent-orange font-semibold mb-2 font-body">
               Consultant partnership
             </p>
@@ -82,6 +88,9 @@ export default function WorkGrid() {
             </button>
           </Panel>
           <Panel>
+            <span className="inline-block px-3 py-1 rounded-full bg-accent-teal/20 text-accent-teal text-xs font-semibold uppercase tracking-wider mb-2">
+              Organizational Development
+            </span>
             <p className="text-xs uppercase tracking-[0.4em] text-accent-teal font-semibold mb-2 font-body">
               Startup nonprofit
             </p>

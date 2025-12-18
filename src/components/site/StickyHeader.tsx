@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Calendar } from "lucide-react";
+import { Calendar, Check } from "lucide-react";
 
 const BOOKING_URL =
   import.meta.env.VITE_BOOKING_URL ||
@@ -26,16 +26,23 @@ export default function StickyHeader() {
       }`}
     >
       <div className="max-w-5xl mx-auto px-5 md:px-6 py-3 flex items-center justify-between">
-        <a 
-          href="#" 
-          onClick={(e) => {
-            e.preventDefault();
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-          className="font-heading text-lg md:text-xl font-semibold text-ink hover:text-ink/80 transition-colors"
-        >
-          Labor & Delivery
-        </a>
+        <div className="flex items-center gap-2 md:gap-3">
+          <a 
+            href="#" 
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="font-heading text-lg md:text-xl font-semibold text-ink hover:text-ink/80 transition-colors"
+          >
+            Labor & Delivery
+          </a>
+          <span className="hidden sm:flex items-center gap-1.5 text-sm text-ink/60">
+            <span className="text-ink/30">•</span>
+            <Check className="h-3.5 w-3.5 text-accent-teal" />
+            <span>Accepting new projects</span>
+          </span>
+        </div>
         
         <a
           href={BOOKING_URL}

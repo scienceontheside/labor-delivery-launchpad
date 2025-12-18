@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     question: "What if you don't nail our voice in the first draft?",
-    answer: "We offer a Voice Guarantee: If the first draft doesn't match your organization's voice, we'll rewrite it completely free — no questions asked. We're confident in our listening process, and we want you to feel zero risk.",
+    answer: "We offer a Voice Guarantee: If the first draft doesn't match your organization's voice, we'll rewrite it completely free — no questions asked. Most clients only need minor tweaks because we spend 30 minutes listening carefully upfront, but we want you to feel zero risk.",
   },
   {
     question: "What if we need revisions?",

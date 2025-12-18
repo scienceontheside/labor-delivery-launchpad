@@ -34,7 +34,10 @@ export default function Process() {
           </div>
           <div className="space-y-3">
             <h3 className="font-heading text-2xl font-semibold text-accent-teal">2. Shape</h3>
-            <p className="font-body text-sm text-muted-foreground/70 mb-1">First drafts in 3-5 days</p>
+            <p className="font-body text-sm text-muted-foreground/70 mb-1">
+              Standard turnaround: 3-5 days<br />
+              <span className="text-accent-teal">Rush available: 24-48 hours for urgent campaigns</span>
+            </p>
             <p className="font-body text-muted-foreground text-lg">
               We draft the pieces you need first. We nail your voice because we listened.
             </p>

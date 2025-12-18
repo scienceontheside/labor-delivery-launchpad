@@ -31,6 +31,10 @@ export default function Pricing() {
             </p>
           </Panel>
         </div>
+
+        <p className="font-body text-sm text-accent-teal mb-4">
+          ⚡ Rush projects: +50% for 24-48 hour delivery
+        </p>
         
         <p className="font-body text-sm text-muted-foreground">
           Every engagement starts with a free 30-minute consultation to make sure we're a fit.

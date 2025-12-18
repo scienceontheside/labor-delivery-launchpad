@@ -16,8 +16,8 @@ const faqs = [
     answer: "Yes. We start every project with a 30-minute conversation where we listen to how you talk about your work. Then we match it.",
   },
   {
-    question: "What if you don't nail our voice in the first draft?",
-    answer: "We offer a Voice Guarantee: If the first draft doesn't match your organization's voice, we'll rewrite it completely free — no questions asked. Most clients only need minor tweaks because we spend 30 minutes listening carefully upfront, but we want you to feel zero risk.",
+    question: "What if you don't nail our voice?",
+    answer: "We rewrite it free. That's our Voice Guarantee—no questions asked.",
   },
   {
     question: "What if we need revisions?",

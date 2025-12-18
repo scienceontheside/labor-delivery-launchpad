@@ -29,13 +29,10 @@ export default function Process() {
           <div className="space-y-2">
             <h3 className="font-heading text-xl font-semibold text-accent-teal">2. Shape</h3>
             <p className="font-body text-muted-foreground leading-relaxed">
-              First drafts in 3-5 days. We match your voice because we listened.
+              First drafts in 3-5 days (rush available: 24-48 hours for urgent campaigns). We match your voice because we listened.
             </p>
-            <p className="font-body text-sm text-muted-foreground/70 mt-3">
-              Standard 3-5 days | Rush 24-48 hours (+50%)
-            </p>
-            <p className="font-body text-sm text-accent-teal mt-2">
-              ✓ Voice Guarantee: We match your voice or rewrite free.
+            <p className="font-body text-sm text-muted-foreground/70 mt-2">
+              Voice guarantee: We'll rewrite free if we miss your voice.
             </p>
           </div>
           

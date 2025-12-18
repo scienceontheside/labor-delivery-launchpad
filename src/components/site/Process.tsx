@@ -27,9 +27,9 @@ export default function Process() {
         <div className="grid md:grid-cols-2 gap-8 mb-12 md:ml-0">
           <div className="space-y-3">
             <h3 className="font-heading text-2xl font-semibold text-accent-orange">1. Listen</h3>
-            <p className="font-body text-sm text-muted-foreground/70 mb-1">30 minutes on Zoom</p>
+            <p className="font-body text-sm text-muted-foreground/70 mb-1">30-minute video call</p>
             <p className="font-body text-muted-foreground text-lg">
-              We ask the right questions. You talk about your work, we take notes on what matters.
+              We ask the right questions. You talk about your work, we take notes. Together we pick 1-2 pieces to ship first.
             </p>
           </div>
           <div className="space-y-3">

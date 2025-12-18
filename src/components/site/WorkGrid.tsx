@@ -1,10 +1,19 @@
+import { useState } from "react";
 import { BookCallButton } from "@/components/ui/BookCallButton";
 import { Panel } from "@/components/ui/Panel";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Eye } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
 
 export default function WorkGrid() {
   const { ref, isVisible } = useScrollAnimation(0.1);
+  const [sampleModalOpen, setSampleModalOpen] = useState(false);
 
   return (
     <section
@@ -47,12 +56,21 @@ export default function WorkGrid() {
             </ul>
             <p className="font-body text-sm text-muted-foreground mb-1">Plus 6 Instagram captions with content direction</p>
             <p className="font-body text-sm font-medium text-accent-teal mb-4">→ Delivered in 10 days</p>
-            <button
-              onClick={() => window.open("https://calendar.app.google/yrFu89XL25QduC6S6", "_blank")}
-              className="inline-flex items-center gap-2 text-[#A47864] hover:text-[#8B6250] transition-colors font-body text-sm py-2 min-h-[44px]"
-            >
-              Start with something like this <ArrowRight size={16} />
-            </button>
+            <div className="flex flex-col gap-2">
+              <button
+                onClick={() => setSampleModalOpen(true)}
+                className="inline-flex items-center gap-2 text-accent-teal hover:text-accent-teal/80 transition-colors font-body text-sm py-2 min-h-[44px]"
+              >
+                <Eye size={16} />
+                See a sample email from this project
+              </button>
+              <button
+                onClick={() => window.open("https://calendar.app.google/yrFu89XL25QduC6S6", "_blank")}
+                className="inline-flex items-center gap-2 text-[#A47864] hover:text-[#8B6250] transition-colors font-body text-sm py-2 min-h-[44px]"
+              >
+                Start with something like this <ArrowRight size={16} />
+              </button>
+            </div>
           </Panel>
           <Panel>
             <span className="inline-block px-3 py-1 rounded-full bg-accent-teal/20 text-accent-teal text-xs font-semibold uppercase tracking-wider mb-2">
@@ -125,6 +143,82 @@ export default function WorkGrid() {
           <BookCallButton>Book a call</BookCallButton>
         </div>
       </div>
+
+      {/* Sample Email Modal */}
+      <Dialog open={sampleModalOpen} onOpenChange={setSampleModalOpen}>
+        <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto bg-cream">
+          <DialogHeader>
+            <DialogTitle className="font-heading text-2xl text-ink">
+              Sample: Donor Appeal Email
+            </DialogTitle>
+            <DialogDescription className="font-body text-muted-foreground">
+              Youth Development Organization (Client name confidential)
+            </DialogDescription>
+          </DialogHeader>
+
+          {/* Sample Email Content */}
+          <div className="mt-4 p-6 bg-background rounded-lg border border-ink/10">
+            <p className="font-body text-sm text-muted-foreground mb-4">
+              Subject: <span className="text-ink font-medium">A moment that changed everything for Marcus</span>
+            </p>
+            <div className="font-body text-ink space-y-4 text-sm leading-relaxed">
+              <p>Dear [DONOR NAME],</p>
+              <p>
+                Last Tuesday, Marcus walked into our center with his shoulders hunched and his eyes on the floor. 
+                He'd just failed his third math test this semester.
+              </p>
+              <p>
+                But by 4pm, something had shifted. Our tutor, Ms. Jackson, didn't start with equations. 
+                She started with a question: "What do you actually want to be good at?"
+              </p>
+              <p>
+                Marcus said he wanted to build things. So they built — using geometry to design a model skatepark, 
+                calculating angles and measurements. For the first time, math made sense.
+              </p>
+              <p>
+                <strong>This is what your support makes possible.</strong>
+              </p>
+              <p>
+                Right now, 47 young people like Marcus are counting on [ORGANIZATION NAME] to be here when school lets out. 
+                Your gift of $100 keeps our doors open for one student for an entire month.
+              </p>
+              <p>
+                Will you help us reach our goal of $15,000 by December 31st?
+              </p>
+              <p className="mt-6">
+                With gratitude,<br />
+                <span className="font-medium">[Executive Director Name]</span><br />
+                [ORGANIZATION NAME]
+              </p>
+            </div>
+          </div>
+
+          {/* Context */}
+          <div className="mt-6 space-y-3">
+            <div className="flex items-start gap-3">
+              <span className="text-accent-orange font-semibold">Challenge:</span>
+              <span className="font-body text-muted-foreground">Turn program data into emotional donor story</span>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="text-accent-teal font-semibold">Result:</span>
+              <span className="font-body text-muted-foreground">32% increase in donations vs. previous appeal</span>
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div className="mt-6 pt-4 border-t border-ink/10">
+            <button
+              onClick={() => {
+                setSampleModalOpen(false);
+                window.open("https://calendar.app.google/yrFu89XL25QduC6S6", "_blank");
+              }}
+              className="inline-flex items-center gap-2 text-[#A47864] hover:text-[#8B6250] transition-colors font-body text-base py-2 min-h-[44px] font-medium"
+            >
+              Start with something like this <ArrowRight size={18} />
+            </button>
+          </div>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 }

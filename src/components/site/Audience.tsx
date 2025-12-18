@@ -34,22 +34,22 @@ export default function Audience() {
       </div>
 
       {/* soft bullets */}
-      <ul className="space-y-3 mb-12">
-        <li className="flex gap-3 items-start">
-          <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[hsl(var(--accent-orange))]" />
-          <span className="text-[hsl(var(--muted-foreground))]">
+      <ul className="space-y-4 mb-12">
+        <li className="flex gap-4 items-start">
+          <span className="mt-[0.5rem] h-2 w-2 min-w-2 rounded-full bg-[hsl(var(--accent-orange))]" />
+          <span className="text-[hsl(var(--muted-foreground))] leading-relaxed">
             You owe donors an update and no one has time to write it
           </span>
         </li>
-        <li className="flex gap-3 items-start">
-          <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[hsl(var(--accent-orange))]" />
-          <span className="text-[hsl(var(--muted-foreground))]">
+        <li className="flex gap-4 items-start">
+          <span className="mt-[0.5rem] h-2 w-2 min-w-2 rounded-full bg-[hsl(var(--accent-orange))]" />
+          <span className="text-[hsl(var(--muted-foreground))] leading-relaxed">
             You have a campaign but nothing donor-ready
           </span>
         </li>
-        <li className="flex gap-3 items-start">
-          <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[hsl(var(--accent-orange))]" />
-          <span className="text-[hsl(var(--muted-foreground))]">
+        <li className="flex gap-4 items-start">
+          <span className="mt-[0.5rem] h-2 w-2 min-w-2 rounded-full bg-[hsl(var(--accent-orange))]" />
+          <span className="text-[hsl(var(--muted-foreground))] leading-relaxed">
             Your board asked for "more communications" but you can't add a person
           </span>
         </li>

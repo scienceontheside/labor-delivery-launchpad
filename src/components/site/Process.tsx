@@ -14,12 +14,6 @@ export default function Process() {
       id="process"
       className={`py-12 md:py-24 px-5 md:px-6 bg-cream border-t border-ink/5 relative overflow-hidden transition-all duration-[600ms] ease-out ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
     >
-      {/* Olivetti-style background word-stack - desktop only */}
-      <div className="hidden lg:flex absolute inset-0 flex-col items-center justify-center pointer-events-none opacity-[0.02] select-none">
-        <p className="font-heading text-[15rem] font-bold leading-none tracking-tighter">LISTEN</p>
-        <p className="font-heading text-[15rem] font-bold leading-none tracking-tighter">SHAPE</p>
-        <p className="font-heading text-[15rem] font-bold leading-none tracking-tighter">DELIVER</p>
-      </div>
       <div className="max-w-4xl mx-auto relative z-10">
         <p className="text-xs tracking-[0.4em] uppercase text-accent-orange font-semibold mb-4 font-body">How It Works</p>
         <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-10 text-ink tracking-tight leading-tight">Three steps. That's it.</h2>

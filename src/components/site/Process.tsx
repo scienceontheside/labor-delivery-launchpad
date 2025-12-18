@@ -12,7 +12,7 @@ export default function Process() {
     <section
       ref={ref}
       id="process"
-      className={`py-12 md:py-24 px-5 md:px-6 bg-cream relative overflow-hidden transition-all duration-[600ms] ease-out ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
+      className={`py-12 md:py-24 px-5 md:px-6 bg-cream border-t border-ink/5 relative overflow-hidden transition-all duration-[600ms] ease-out ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
     >
       {/* Olivetti-style background word-stack - desktop only */}
       <div className="hidden lg:flex absolute inset-0 flex-col items-center justify-center pointer-events-none opacity-[0.02] select-none">

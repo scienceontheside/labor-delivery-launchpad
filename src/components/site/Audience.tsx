@@ -14,6 +14,7 @@ export default function Audience() {
         lg:px-16
         py-14
         bg-[hsl(var(--background))]
+        border-t border-ink/5
         transition-all duration-[600ms] ease-out
         ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}
       `}

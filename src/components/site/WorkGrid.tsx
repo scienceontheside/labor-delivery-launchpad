@@ -56,21 +56,13 @@ export default function WorkGrid() {
             </ul>
             <p className="font-body text-sm text-muted-foreground mb-1">Plus 6 Instagram captions with content direction</p>
             <p className="font-body text-sm font-medium text-accent-teal mb-4">→ Delivered in 10 days</p>
-            <div className="flex flex-col gap-2">
-              <button
-                onClick={() => setSampleModalOpen(true)}
-                className="inline-flex items-center gap-2 text-accent-teal hover:text-accent-teal/80 transition-colors font-body text-sm py-2 min-h-[44px]"
-              >
-                <Eye size={16} />
-                See a sample email from this project
-              </button>
-              <button
-                onClick={() => window.open("https://calendar.app.google/yrFu89XL25QduC6S6", "_blank")}
-                className="inline-flex items-center gap-2 text-[#A47864] hover:text-[#8B6250] transition-colors font-body text-sm py-2 min-h-[44px]"
-              >
-                Start with something like this <ArrowRight size={16} />
-              </button>
-            </div>
+            <button
+              onClick={() => setSampleModalOpen(true)}
+              className="inline-flex items-center gap-2 text-accent-teal hover:text-accent-teal/80 transition-colors font-body text-sm py-2 min-h-[44px]"
+            >
+              <Eye size={16} />
+              See a sample email from this project
+            </button>
           </Panel>
           <Panel>
             <span className="inline-block px-3 py-1 rounded-full bg-accent-teal/20 text-accent-teal text-xs font-semibold uppercase tracking-wider mb-2">
@@ -97,13 +89,7 @@ export default function WorkGrid() {
                 <span>Board talking points (1-pager)</span>
               </li>
             </ul>
-            <p className="font-body text-sm font-medium text-accent-teal mb-4">→ Delivered in 7 days</p>
-            <button
-              onClick={() => window.open("https://calendar.app.google/yrFu89XL25QduC6S6", "_blank")}
-              className="inline-flex items-center gap-2 text-[#A47864] hover:text-[#8B6250] transition-colors font-body text-sm py-2 min-h-[44px]"
-            >
-              Start with something like this <ArrowRight size={16} />
-            </button>
+            <p className="font-body text-sm font-medium text-accent-teal">→ Delivered in 7 days</p>
           </Panel>
           <Panel>
             <span className="inline-block px-3 py-1 rounded-full bg-accent-teal/20 text-accent-teal text-xs font-semibold uppercase tracking-wider mb-2">
@@ -130,16 +116,15 @@ export default function WorkGrid() {
                 <span>Boilerplate (3 lengths: 25, 50, 100 words)</span>
               </li>
             </ul>
-            <p className="font-body text-sm font-medium text-accent-teal mb-4">→ Delivered in 5 days</p>
-            <button
-              onClick={() => window.open("https://calendar.app.google/yrFu89XL25QduC6S6", "_blank")}
-              className="inline-flex items-center gap-2 text-[#A47864] hover:text-[#8B6250] transition-colors font-body text-sm py-2 min-h-[44px]"
-            >
-              Start with something like this <ArrowRight size={16} />
-            </button>
+            <p className="font-body text-sm font-medium text-accent-teal">→ Delivered in 5 days</p>
           </Panel>
         </div>
-        <div className="mt-12 text-center">
+        
+        {/* Master CTA */}
+        <div className="mt-16 text-center">
+          <p className="font-body text-lg text-muted-foreground mb-6">
+            See something that fits your needs?
+          </p>
           <BookCallButton>Book a call</BookCallButton>
         </div>
       </div>

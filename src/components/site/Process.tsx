@@ -41,6 +41,11 @@ export default function Process() {
             <p className="font-body text-muted-foreground text-lg">
               We draft the pieces you need first. We nail your voice because we listened.
             </p>
+            <div className="mt-4 p-4 bg-accent-teal/10 border border-accent-teal/20 rounded-lg">
+              <p className="font-body text-sm text-ink">
+                <span className="text-accent-teal font-semibold">✓ Voice Guarantee:</span> If we don't match your organization's voice in the first draft, we'll rewrite it free — no questions asked.
+              </p>
+            </div>
           </div>
           <div className="space-y-3">
             <h3 className="font-heading text-2xl font-semibold text-accent-orange">3. Deliver</h3>

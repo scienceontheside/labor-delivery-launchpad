@@ -74,7 +74,7 @@ export default function WorkGrid() {
           </Panel>
           <Panel>
             <span className="inline-block px-3 py-1 rounded-full bg-accent-teal/20 text-accent-teal text-xs font-semibold uppercase tracking-wider mb-2">
-              Consultant Partnership
+              Fundraising
             </span>
             <p className="text-xs uppercase tracking-[0.4em] text-accent-orange font-semibold mb-2 font-body">
               Consultant partnership

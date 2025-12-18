@@ -34,13 +34,16 @@ export default function Process() {
           </div>
           <div className="space-y-3">
             <h3 className="font-heading text-2xl font-semibold text-accent-teal">2. Shape</h3>
-            <p className="font-body text-sm text-muted-foreground/70 mb-1">
-              Standard turnaround: 3-5 days<br />
-              <span className="text-accent-teal">Rush available: 24-48 hours for urgent campaigns</span>
-            </p>
             <p className="font-body text-muted-foreground text-lg">
               We draft the pieces you need first. We nail your voice because we listened.
             </p>
+            <div className="mt-2 space-y-1">
+              <p className="font-body text-sm text-muted-foreground/70 font-medium">Timeline options:</p>
+              <ul className="font-body text-sm text-muted-foreground/80 space-y-0.5 pl-4">
+                <li>• Standard delivery: 3-5 business days</li>
+                <li>• <span className="text-accent-teal">Rush delivery: 24-48 hours</span> <span className="text-muted-foreground/60">(for urgent campaigns, +50%)</span></li>
+              </ul>
+            </div>
             <div className="mt-4 p-4 bg-accent-teal/10 border border-accent-teal/20 rounded-lg">
               <p className="font-body text-sm text-ink">
                 <span className="text-accent-teal font-semibold">✓ Voice Guarantee:</span> If we don't match your organization's voice in the first draft, we'll rewrite it free — no questions asked.

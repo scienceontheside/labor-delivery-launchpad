@@ -1,4 +1,4 @@
-import { Calendar } from "lucide-react";
+import { Calendar, Check } from "lucide-react";
 
 const BOOKING_URL =
   import.meta.env.VITE_BOOKING_URL ||
@@ -101,8 +101,14 @@ export default function Hero() {
             </button>
           </div>
 
+          {/* availability badge */}
+          <div className="flex items-center gap-2 text-sm text-accent-teal mt-1">
+            <Check className="h-4 w-4" />
+            <span>Currently accepting new projects</span>
+          </div>
+
           {/* rush availability */}
-          <p className="text-sm text-[hsl(var(--hero-on))]/70 mt-2">
+          <p className="text-sm text-[hsl(var(--hero-on))]/70">
             ⚡ Need it this week? Rush projects available for active campaigns.
           </p>
 

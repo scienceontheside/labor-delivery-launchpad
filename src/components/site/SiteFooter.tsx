@@ -36,6 +36,9 @@ export default function SiteFooter() {
               <Calendar className="h-4 w-4" aria-hidden="true" />
               Book a call
             </a>
+            <p className="font-body text-xs text-muted-foreground/70 mt-2">
+              Not ready for a call? Just email — we respond within 24 hours.
+            </p>
           </div>
 
           {/* Right - Hours */}
